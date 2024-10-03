@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
         button = findViewById(R.id.button);
 
+        button.setText(R.string.scale_signal_calc);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

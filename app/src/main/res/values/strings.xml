@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Metrology</string>
+    <string-array name="scaleType">
+        <item>Линейная</item>
+        <item>Линейная убывающая</item>
+        <item>Квадратичная</item>
+        <item>Квадратичная, убывающая</item>
+        <item>Корнеизвлекающая</item>
+        <item>Корнеизвлекающая, убывающая</item>
+    </string-array>
+
+    <string name="start">Начало</string>
+    <string name="end">Конец</string>
+    <string name="unified_signal">Унифицированный сигнал</string>
+    <string name="physical_value">Физическая величина</string>
+
+    <string name="zero">0</string>
+    <string name="four">4</string>
+    <string name="twelve">12</string>
+    <string name="twenty">20</string>
+    <string name="fifty">50</string>
+    <string name="one_hundred">100</string>
+    <string name="scale_signal_calc">Расчёт шкала-сигнал</string>
+
 </resources>
