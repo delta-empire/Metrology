@@ -20,9 +20,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
-
-
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -36,25 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
         button.setText(R.string.scale_signal_calc);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ScaleSignalActivity.class);
-                v.getContext().startActivity(intent);
-            }
+        button.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), ScaleSignalActivity.class);
+            v.getContext().startActivity(intent);
         });
 
     }
-
-
-
-//        button.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            Intent intent = new Intent(v.getContext(), ScaleSignalActivity.class);
-//            v.getContext().startActivity(intent);
-////                Intent intent = new Intent(view.getContext(), AnotherActivity.class);
-////                view.getContext().startActivity(intent);
-//        }
-//    });
 }
