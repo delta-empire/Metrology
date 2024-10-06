@@ -2,7 +2,6 @@ package ru.sergeipavlov.metrology;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -30,13 +29,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button = findViewById(R.id.button);
-
-        button.setText(R.string.scale_signal_calc);
-
         button.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), ScaleSignalActivity.class);
             v.getContext().startActivity(intent);
         });
-
     }
 }

@@ -13,9 +13,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 import ru.sergeipavlov.metrology.R;
 
 public class ScaleSignalActivity extends AppCompatActivity {
+
+    DecimalFormat decimalFormat = new DecimalFormat("#.##");
 
     private EditText etStartPhysicalScale,
             etEndPhysicalScale,
@@ -129,32 +133,32 @@ public class ScaleSignalActivity extends AppCompatActivity {
             case "Линейная":
                 result = scaleSignalCalc.calcPhysicalValueLinearScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
                         getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
-                etPhysicalValue.setText(String.valueOf(result));
+                etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Линейная убывающая":
                 result = scaleSignalCalc.calcPhysicalValueLinearDecreasingScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
                         getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
-                etPhysicalValue.setText(String.valueOf(result));
+                etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Квадратичная":
                 result = scaleSignalCalc.calcPhysicalValueQuadraticScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
                         getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
-                etPhysicalValue.setText(String.valueOf(result));
+                etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Квадратичная, убывающая":
                 result = scaleSignalCalc.calcPhysicalValueQuadraticDecreasingScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
                         getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
-                etPhysicalValue.setText(String.valueOf(result));
+                etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Корнеизвлекающая":
                 result = scaleSignalCalc.calcPhysicalValueRootextractingScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
                         getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
-                etPhysicalValue.setText(String.valueOf(result));
+                etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Корнеизвлекающая, убывающая":
                 result = scaleSignalCalc.calcPhysicalValueRootextractingDecreasingScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
                         getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
-                etPhysicalValue.setText(String.valueOf(result));
+                etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             default:
                 Toast.makeText(ScaleSignalActivity.this, "Not selected scale type", Toast.LENGTH_LONG).show();
@@ -162,13 +166,14 @@ public class ScaleSignalActivity extends AppCompatActivity {
         }
     }
 
-    private void valueFromCalcUnified() {
+    private double[] valueFromCalcUnified() {
         double[] value = {getPhysicalValue(),
         getEtStartPhysicalScale(),
         getEtEndPhysicalScale(),
         getEtEndUnifiedSignal(),
         getEtStartUnifiedSignal()
         };
+        return value;
     }
 
     private void calcUnifiedSignal() {
@@ -177,32 +182,32 @@ public class ScaleSignalActivity extends AppCompatActivity {
             case "Линейная":
                 result = scaleSignalCalc.calcUnifiedSignalLinearScale(getPhysicalValue(), getEtStartPhysicalScale(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
-                etUnifiedSignal.setText(String.valueOf(result));
+                etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Линейная убывающая":
                 result = scaleSignalCalc.calcUnifiedSignalLinearDecreasingScale(getPhysicalValue(), getEtStartPhysicalScale(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
-                etUnifiedSignal.setText(String.valueOf(result));
+                etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Квадратичная":
                 result = scaleSignalCalc.calcUnifiedSignalQuadraticScale(getPhysicalValue(), getEtStartPhysicalScale(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
-                etUnifiedSignal.setText(String.valueOf(result));
+                etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Квадратичная, убывающая":
                 result = scaleSignalCalc.calcUnifiedSignalQuadraticDecreasingScale(getPhysicalValue(), getEtStartPhysicalScale(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
-                etUnifiedSignal.setText(String.valueOf(result));
+                etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Корнеизвлекающая":
                 result = scaleSignalCalc.calcUnifiedSignalRootextractingScale(getPhysicalValue(), getEtStartPhysicalScale(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
-                etUnifiedSignal.setText(String.valueOf(result));
+                etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Корнеизвлекающая, убывающая":
                 result = scaleSignalCalc.calcUnifiedSignalRootextractingDecreasingScale(getPhysicalValue(), getEtStartPhysicalScale(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
-                etUnifiedSignal.setText(String.valueOf(result));
+                etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             default:
                 Toast.makeText(ScaleSignalActivity.this, "Not selected scale type", Toast.LENGTH_LONG).show();

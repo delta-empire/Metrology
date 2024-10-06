@@ -14,17 +14,19 @@
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/physical_value"/>
 
     <Spinner
         android:id="@+id/spChooseScaleType"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:entries="@array/scaleType"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPhysicalValue"
-        android:entries="@array/scaleType"/>
+        app:layout_constraintWidth_percent="0.9"/>
 
     <TextView
         android:id="@+id/tvStartPhysicalValue"
@@ -125,21 +127,21 @@
         android:id="@+id/tvStartUnifiedSignal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/start"
         app:layout_constraintEnd_toEndOf="@+id/etStartUnifiedSignal"
         app:layout_constraintStart_toStartOf="@+id/etStartUnifiedSignal"
-        app:layout_constraintTop_toBottomOf="@+id/etUnifiedSignal" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUnifiedSignal1" />
 
     <TextView
         android:id="@+id/tvEndUnifiedSignal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/end"
         app:layout_constraintEnd_toEndOf="@+id/etEndUnifiedSignal"
         app:layout_constraintStart_toStartOf="@+id/etEndUnifiedSignal"
-        app:layout_constraintTop_toBottomOf="@+id/etUnifiedSignal" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUnifiedSignal1" />
 
     <EditText
         android:id="@+id/etStartUnifiedSignal"
@@ -166,5 +168,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tvEndUnifiedSignal"
         app:layout_constraintWidth_percent="0.4"
         android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvUnifiedSignal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/unified_signal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUnifiedSignal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
