@@ -22,4 +22,8 @@
     <string name="one_hundred">100</string>
     <string name="scale_signal_calc">Расчёт шкала-сигнал</string>
 
+    <string-array name="main_menu_list">
+        <item>Расчёт шкала-сигнал</item>
+    </string-array>
+
 </resources>

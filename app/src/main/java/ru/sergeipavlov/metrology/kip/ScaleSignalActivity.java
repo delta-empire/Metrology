@@ -36,42 +36,53 @@ public class ScaleSignalActivity extends AppCompatActivity {
         if (etStartPhysicalValue.getText().toString().isEmpty()) {
             etStartPhysicalValue.setText(R.string.zero);
         }
-        return Double.parseDouble(etStartPhysicalValue.getText().toString());
+        String stringFindPoint = etStartPhysicalValue.getText().toString();
+        stringFindPoint = stringFindPoint.replace(',', '.');
+        return Double.parseDouble(stringFindPoint);
     }
 
     public double getEtEndPhysicalScale() {
         if (etEndPhysicalScale.getText().toString().isEmpty()) {
             etEndPhysicalScale.setText(R.string.one_hundred);
         }
-            return Double.parseDouble(etEndPhysicalScale.getText().toString());
+        String stringFindPoint = etEndPhysicalScale.getText().toString();
+        stringFindPoint = stringFindPoint.replace(',', '.');
+        return Double.parseDouble(stringFindPoint);
     }
 
     public double getPhysicalValue() {
         if (etPhysicalValue.getText().toString().isEmpty()) {
             etPhysicalValue.setText(R.string.fifty);
         }
-        return Double.parseDouble(etPhysicalValue.getText().toString());
+        String stringFindPoint = etPhysicalValue.getText().toString();
+        stringFindPoint = stringFindPoint.replace(',', '.');
+        return Double.parseDouble(stringFindPoint);
     }
 
     public double getEtUnifiedSignal() {
         if (etUnifiedSignal.getText().toString().isEmpty()) {
             etUnifiedSignal.setText(R.string.twelve);
         }
-        return Double.parseDouble(etUnifiedSignal.getText().toString());
+        String stringFindPoint = etUnifiedSignal.getText().toString();
+        stringFindPoint = stringFindPoint.replace(',', '.');
+        return Double.parseDouble(stringFindPoint);
     }
 
     public double getEtStartUnifiedSignal() {
         if (etStartUnifiedSignal.getText().toString().isEmpty()) {
             etStartUnifiedSignal.setText(R.string.four);
         }
-        return Double.parseDouble(etStartUnifiedSignal.getText().toString());
+        String stringFindPoint = etStartUnifiedSignal.getText().toString();
+        return Double.parseDouble(stringFindPoint);
     }
 
     public double getEtEndUnifiedSignal() {
         if (etEndUnifiedSignal.getText().toString().isEmpty()) {
             etEndUnifiedSignal.setText(R.string.twenty);
         }
-        return Double.parseDouble(etEndUnifiedSignal.getText().toString());
+        String stringFindPoint = etEndUnifiedSignal.getText().toString();
+        stringFindPoint = stringFindPoint.replace(',', '.');
+        return Double.parseDouble(stringFindPoint);
     }
 
     @Override

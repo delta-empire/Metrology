@@ -10,11 +10,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+
 import ru.sergeipavlov.metrology.kip.ScaleSignalActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     Button button;
+
+    ArrayList<String> arrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
