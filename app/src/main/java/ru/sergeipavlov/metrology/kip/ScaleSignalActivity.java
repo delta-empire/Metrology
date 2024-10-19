@@ -19,9 +19,9 @@ import ru.sergeipavlov.metrology.R;
 
 public class ScaleSignalActivity extends AppCompatActivity {
 
-    DecimalFormat decimalFormat = new DecimalFormat("#.##");
+    DecimalFormat decimalFormat = new DecimalFormat("#.###");
 
-    private EditText etStartPhysicalScale,
+    private EditText etStartPhysicalValue,
             etEndPhysicalScale,
             etPhysicalValue,
             etUnifiedSignal,
@@ -32,18 +32,18 @@ public class ScaleSignalActivity extends AppCompatActivity {
 
     ScaleSignalCalc scaleSignalCalc = new ScaleSignalCalc();
 
+    public double getEtStartPhysicalValue() {
+        if (etStartPhysicalValue.getText().toString().isEmpty()) {
+            etStartPhysicalValue.setText(R.string.zero);
+        }
+        return Double.parseDouble(etStartPhysicalValue.getText().toString());
+    }
+
     public double getEtEndPhysicalScale() {
         if (etEndPhysicalScale.getText().toString().isEmpty()) {
             etEndPhysicalScale.setText(R.string.one_hundred);
         }
             return Double.parseDouble(etEndPhysicalScale.getText().toString());
-    }
-
-    public double getEtEndUnifiedSignal() {
-        if (etEndUnifiedSignal.getText().toString().isEmpty()) {
-            etEndUnifiedSignal.setText(R.string.twenty);
-        }
-        return Double.parseDouble(etEndUnifiedSignal.getText().toString());
     }
 
     public double getPhysicalValue() {
@@ -53,12 +53,11 @@ public class ScaleSignalActivity extends AppCompatActivity {
         return Double.parseDouble(etPhysicalValue.getText().toString());
     }
 
-    public double getEtStartPhysicalScale() {
-        if (etStartPhysicalScale.getText().toString().isEmpty()) {
-            etStartPhysicalScale.setText(R.string.zero);
+    public double getEtUnifiedSignal() {
+        if (etUnifiedSignal.getText().toString().isEmpty()) {
+            etUnifiedSignal.setText(R.string.twelve);
         }
-        return Double.parseDouble(etStartPhysicalScale.getText().toString());
-
+        return Double.parseDouble(etUnifiedSignal.getText().toString());
     }
 
     public double getEtStartUnifiedSignal() {
@@ -68,11 +67,11 @@ public class ScaleSignalActivity extends AppCompatActivity {
         return Double.parseDouble(etStartUnifiedSignal.getText().toString());
     }
 
-    public double getEtUnifiedSignal() {
-        if (etUnifiedSignal.getText().toString().isEmpty()) {
-            etUnifiedSignal.setText(R.string.twelve);
+    public double getEtEndUnifiedSignal() {
+        if (etEndUnifiedSignal.getText().toString().isEmpty()) {
+            etEndUnifiedSignal.setText(R.string.twenty);
         }
-        return Double.parseDouble(etUnifiedSignal.getText().toString());
+        return Double.parseDouble(etEndUnifiedSignal.getText().toString());
     }
 
     @Override
@@ -88,14 +87,14 @@ public class ScaleSignalActivity extends AppCompatActivity {
 
         Spinner spChooseScaleType = findViewById(R.id.spChooseScaleType);
 
-        etStartPhysicalScale = findViewById(R.id.etStartPhysicalScale);
+        etStartPhysicalValue = findViewById(R.id.etStartPhysicalScale);
         etEndPhysicalScale = findViewById(R.id.etEndPhysicalScale);
         etPhysicalValue = findViewById(R.id.etPhysicalValue);
         etUnifiedSignal = findViewById(R.id.etUnifiedSignal);
         etStartUnifiedSignal = findViewById(R.id.etStartUnifiedSignal);
         etEndUnifiedSignal = findViewById(R.id.etEndUnifiedSignal);
 
-        etStartPhysicalScale.setHint("0");
+        etStartPhysicalValue.setHint("0");
         etEndPhysicalScale.setHint("100");
         etPhysicalValue.setHint("50");
         etUnifiedSignal.setHint("12");
@@ -114,50 +113,50 @@ public class ScaleSignalActivity extends AppCompatActivity {
             }
         });
 
-        etStartPhysicalScale.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValuew());
+        etStartPhysicalValue.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValue());
 
-        etEndPhysicalScale.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValuew());
+        etEndPhysicalScale.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValue());
 
         etPhysicalValue.setOnFocusChangeListener((v, hasFocus) -> calcUnifiedSignal());
 
-        etUnifiedSignal.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValuew());
+        etUnifiedSignal.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValue());
 
-        etStartUnifiedSignal.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValuew());
+        etStartUnifiedSignal.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValue());
 
-        etEndUnifiedSignal.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValuew());
+        etEndUnifiedSignal.setOnFocusChangeListener((v, hasFocus) -> calcPhysicalValue());
     }
 
-    private void calcPhysicalValuew() {
+    private void calcPhysicalValue() {
         double result;
         switch (scaleType) {
             case "Линейная":
                 result = scaleSignalCalc.calcPhysicalValueLinearScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
-                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
+                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalValue());
                 etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Линейная убывающая":
                 result = scaleSignalCalc.calcPhysicalValueLinearDecreasingScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
-                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
+                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalValue());
                 etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Квадратичная":
                 result = scaleSignalCalc.calcPhysicalValueQuadraticScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
-                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
+                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalValue());
                 etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Квадратичная, убывающая":
                 result = scaleSignalCalc.calcPhysicalValueQuadraticDecreasingScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
-                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
+                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalValue());
                 etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Корнеизвлекающая":
                 result = scaleSignalCalc.calcPhysicalValueRootextractingScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
-                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
+                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalValue());
                 etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Корнеизвлекающая, убывающая":
                 result = scaleSignalCalc.calcPhysicalValueRootextractingDecreasingScale(getEtUnifiedSignal(), getEtStartUnifiedSignal(),
-                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalScale());
+                        getEtEndUnifiedSignal(), getEtEndPhysicalScale(), getEtStartPhysicalValue());
                 etPhysicalValue.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             default:
@@ -166,46 +165,36 @@ public class ScaleSignalActivity extends AppCompatActivity {
         }
     }
 
-    private double[] valueFromCalcUnified() {
-        double[] value = {getPhysicalValue(),
-        getEtStartPhysicalScale(),
-        getEtEndPhysicalScale(),
-        getEtEndUnifiedSignal(),
-        getEtStartUnifiedSignal()
-        };
-        return value;
-    }
-
     private void calcUnifiedSignal() {
         double result;
         switch (scaleType) {
             case "Линейная":
-                result = scaleSignalCalc.calcUnifiedSignalLinearScale(getPhysicalValue(), getEtStartPhysicalScale(),
+                result = scaleSignalCalc.calcUnifiedSignalLinearScale(getPhysicalValue(), getEtStartPhysicalValue(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
                 etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Линейная убывающая":
-                result = scaleSignalCalc.calcUnifiedSignalLinearDecreasingScale(getPhysicalValue(), getEtStartPhysicalScale(),
+                result = scaleSignalCalc.calcUnifiedSignalLinearDecreasingScale(getPhysicalValue(), getEtStartPhysicalValue(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
                 etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Квадратичная":
-                result = scaleSignalCalc.calcUnifiedSignalQuadraticScale(getPhysicalValue(), getEtStartPhysicalScale(),
+                result = scaleSignalCalc.calcUnifiedSignalQuadraticScale(getPhysicalValue(), getEtStartPhysicalValue(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
                 etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Квадратичная, убывающая":
-                result = scaleSignalCalc.calcUnifiedSignalQuadraticDecreasingScale(getPhysicalValue(), getEtStartPhysicalScale(),
+                result = scaleSignalCalc.calcUnifiedSignalQuadraticDecreasingScale(getPhysicalValue(), getEtStartPhysicalValue(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
                 etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Корнеизвлекающая":
-                result = scaleSignalCalc.calcUnifiedSignalRootextractingScale(getPhysicalValue(), getEtStartPhysicalScale(),
+                result = scaleSignalCalc.calcUnifiedSignalRootextractingScale(getPhysicalValue(), getEtStartPhysicalValue(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
                 etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
             case "Корнеизвлекающая, убывающая":
-                result = scaleSignalCalc.calcUnifiedSignalRootextractingDecreasingScale(getPhysicalValue(), getEtStartPhysicalScale(),
+                result = scaleSignalCalc.calcUnifiedSignalRootextractingDecreasingScale(getPhysicalValue(), getEtStartPhysicalValue(),
                         getEtEndPhysicalScale(), getEtEndUnifiedSignal(), getEtStartUnifiedSignal());
                 etUnifiedSignal.setText(String.valueOf(decimalFormat.format(result)));
                 break;
