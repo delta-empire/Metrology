@@ -24,6 +24,15 @@
 
     <string-array name="main_menu_list">
         <item>Расчёт шкала-сигнал</item>
+        <item>Перевод единиц измерения</item>
+    </string-array>
+
+    <string-array name="unit_transformation_list">
+        <item>Расход</item>
+        <item>Давление</item>
+        <item>Температура</item>
+        <item>Масса</item>
+        <item>Расстояние</item>
     </string-array>
 
 </resources>

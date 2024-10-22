@@ -1,4 +1,4 @@
-package ru.sergeipavlov.metrology;
+package ru.sergeipavlov.metrology.kip.transformation;
 
 import android.os.Bundle;
 
@@ -15,11 +15,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+import ru.sergeipavlov.metrology.AdapterMainMenu;
+import ru.sergeipavlov.metrology.R;
 
+public class UnitTrasformationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_recycler);
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private List<String> generateData() {
         List<String> data = new ArrayList<>();
-        data = Arrays.asList(getResources().getStringArray(R.array.main_menu_list));
+        data = Arrays.asList(getResources().getStringArray(R.array.unit_transformation_list));
         return data;
     }
 }

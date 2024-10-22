@@ -27,6 +27,14 @@
             android:name=".kip.ScaleSignalActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".kip.transformation.UnitTrasformationActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.PressureActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
