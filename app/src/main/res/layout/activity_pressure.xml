@@ -1,6 +1,711 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pressure">
+
+
+        <TextView
+            android:id="@+id/tvInternationalSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/international_system"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etPascal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvInternationalSystem" />
+
+        <TextView
+            android:id="@+id/tvPascal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/pascal"
+            app:layout_constraintBottom_toBottomOf="@+id/etPascal"
+            app:layout_constraintStart_toEndOf="@+id/etPascal"
+            app:layout_constraintTop_toTopOf="@+id/etPascal" />
+
+        <TextView
+            android:id="@+id/tvDerrivative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/derrivative"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPascal" />
+
+        <EditText
+            android:id="@+id/etKgsFractionSm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDerrivative" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/kgs_sm2"
+            app:layout_constraintBottom_toBottomOf="@+id/etKgsFractionSm2"
+            app:layout_constraintStart_toEndOf="@+id/etKgsFractionSm2"
+            app:layout_constraintTop_toTopOf="@+id/etKgsFractionSm2" />
+
+        <EditText
+            android:id="@+id/etKgsFractionM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etKgsFractionSm2" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/kgs_m2"
+            app:layout_constraintBottom_toBottomOf="@+id/etKgsFractionM2"
+            app:layout_constraintStart_toEndOf="@+id/etKgsFractionM2"
+            app:layout_constraintTop_toBottomOf="@+id/etKgsFractionSm2" />
+
+        <EditText
+            android:id="@+id/etMilliBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etKgsFractionM2" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/milli_bar"
+            app:layout_constraintBottom_toBottomOf="@+id/etMilliBar"
+            app:layout_constraintStart_toEndOf="@+id/etMilliBar"
+            app:layout_constraintTop_toBottomOf="@+id/etKgsFractionM2" />
+
+        <EditText
+            android:id="@+id/etBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMilliBar" />
+
+        <EditText
+            android:id="@+id/etKiloPa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etBar" />
+
+        <EditText
+            android:id="@+id/etMegaPascal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etKiloPa" />
+
+        <EditText
+            android:id="@+id/etNutonFractionMeter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMegaPascal" />
+
+        <EditText
+            android:id="@+id/etKiloNutonFractionM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNutonFractionMeter2" />
+
+        <EditText
+            android:id="@+id/etMegaNutonFractionM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etKiloNutonFractionM2" />
+
+        <EditText
+            android:id="@+id/etNutonFractionSm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMegaNutonFractionM2" />
+
+        <EditText
+            android:id="@+id/etNutomFractionMillimetr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNutonFractionSm2" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/atmosphere"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNutomFractionMillimetr2" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/bar"
+            app:layout_constraintBottom_toBottomOf="@+id/etBar"
+            app:layout_constraintStart_toEndOf="@+id/etBar"
+            app:layout_constraintTop_toBottomOf="@+id/etMilliBar" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/kPa"
+            app:layout_constraintBottom_toBottomOf="@+id/etKiloPa"
+            app:layout_constraintStart_toEndOf="@+id/etKiloPa"
+            app:layout_constraintTop_toBottomOf="@+id/etBar" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/MPa"
+            app:layout_constraintBottom_toBottomOf="@+id/etMegaPascal"
+            app:layout_constraintStart_toEndOf="@+id/etMegaPascal"
+            app:layout_constraintTop_toBottomOf="@+id/etKiloPa" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/N_m2"
+            app:layout_constraintBottom_toTopOf="@+id/etKiloNutonFractionM2"
+            app:layout_constraintStart_toEndOf="@+id/etNutonFractionMeter2"
+            app:layout_constraintTop_toBottomOf="@+id/etMegaPascal" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/kN_m2"
+            app:layout_constraintBottom_toBottomOf="@+id/etKiloNutonFractionM2"
+            app:layout_constraintStart_toEndOf="@+id/etKiloNutonFractionM2"
+            app:layout_constraintTop_toBottomOf="@+id/etNutonFractionMeter2" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/MN_m2"
+            app:layout_constraintBottom_toBottomOf="@+id/etMegaNutonFractionM2"
+            app:layout_constraintStart_toEndOf="@+id/etMegaNutonFractionM2"
+            app:layout_constraintTop_toBottomOf="@+id/etKiloNutonFractionM2" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/N_sm2"
+            app:layout_constraintBottom_toBottomOf="@+id/etNutonFractionSm2"
+            app:layout_constraintStart_toEndOf="@+id/etNutonFractionSm2"
+            app:layout_constraintTop_toBottomOf="@+id/etMegaNutonFractionM2" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/N_mm2"
+            app:layout_constraintBottom_toBottomOf="@+id/etNutomFractionMillimetr2"
+            app:layout_constraintStart_toEndOf="@+id/etNutomFractionMillimetr2"
+            app:layout_constraintTop_toBottomOf="@+id/etNutonFractionSm2" />
+
+        <EditText
+            android:id="@+id/etAtmosphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/tvAtmosphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/atmosphere_"
+            app:layout_constraintBottom_toBottomOf="@+id/etAtmosphere"
+            app:layout_constraintStart_toEndOf="@+id/etAtmosphere"
+            app:layout_constraintTop_toTopOf="@+id/etAtmosphere" />
+
+        <EditText
+            android:id="@+id/etTechnicalAtmosphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAtmosphere" />
+
+        <TextView
+            android:id="@+id/tvTechnicalAtmospere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/technical_atmosphere"
+            app:layout_constraintBottom_toBottomOf="@+id/etTechnicalAtmosphere"
+            app:layout_constraintStart_toEndOf="@+id/etTechnicalAtmosphere"
+            app:layout_constraintTop_toTopOf="@+id/etTechnicalAtmosphere" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/water_column"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTechnicalAtmosphere" />
+
+        <EditText
+            android:id="@+id/etMilliMetrH20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/tvMillimetreH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/millimetre_h2o"
+            app:layout_constraintBottom_toBottomOf="@+id/etMilliMetrH20"
+            app:layout_constraintStart_toEndOf="@+id/etMilliMetrH20"
+            app:layout_constraintTop_toTopOf="@+id/etMilliMetrH20" />
+
+        <EditText
+            android:id="@+id/etSantimetrH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMilliMetrH20" />
+
+        <TextView
+            android:id="@+id/tvSantimeterH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/santimetre_h2o"
+            app:layout_constraintBottom_toBottomOf="@+id/etSantimetrH2O"
+            app:layout_constraintStart_toEndOf="@+id/etSantimetrH2O"
+            app:layout_constraintTop_toBottomOf="@+id/etMilliMetrH20" />
+
+        <EditText
+            android:id="@+id/etMetreH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSantimetrH2O" />
+
+        <TextView
+            android:id="@+id/tvMeterH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/metre_h2o"
+            app:layout_constraintBottom_toBottomOf="@+id/etMetreH2O"
+            app:layout_constraintStart_toEndOf="@+id/etMetreH2O"
+            app:layout_constraintTop_toBottomOf="@+id/etSantimetrH2O" />
+
+        <EditText
+            android:id="@+id/etInchH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMetreH2O" />
+
+        <TextView
+            android:id="@+id/tvInchH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/inch_h2o"
+            app:layout_constraintBottom_toBottomOf="@+id/etInchH2O"
+            app:layout_constraintStart_toEndOf="@+id/etInchH2O"
+            app:layout_constraintTop_toBottomOf="@+id/etMetreH2O" />
+
+        <EditText
+            android:id="@+id/etFutH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etInchH2O" />
+
+        <TextView
+            android:id="@+id/tvFutH2O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/fut_h2o"
+            app:layout_constraintBottom_toBottomOf="@+id/etFutH2O"
+            app:layout_constraintStart_toEndOf="@+id/etFutH2O"
+            app:layout_constraintTop_toBottomOf="@+id/etInchH2O" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/hg_column"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFutH2O" />
+
+        <EditText
+            android:id="@+id/etMillimetreHG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/tvMillietreHG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/millimetre_hg"
+            app:layout_constraintBottom_toBottomOf="@+id/etMillimetreHG"
+            app:layout_constraintStart_toEndOf="@+id/etMillimetreHG"
+            app:layout_constraintTop_toTopOf="@+id/etMillimetreHG" />
+
+        <EditText
+            android:id="@+id/etSantimetreHG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMillimetreHG" />
+
+        <TextView
+            android:id="@+id/tvSantimeterHG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/santimetre_hg"
+            app:layout_constraintBottom_toBottomOf="@+id/etSantimetreHG"
+            app:layout_constraintStart_toEndOf="@+id/etSantimetreHG"
+            app:layout_constraintTop_toBottomOf="@+id/etMillimetreHG" />
+
+        <EditText
+            android:id="@+id/etInchHG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSantimetreHG" />
+
+        <TextView
+            android:id="@+id/tvInchHG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/inch_hg"
+            app:layout_constraintBottom_toBottomOf="@+id/etInchHG"
+            app:layout_constraintStart_toEndOf="@+id/etInchHG"
+            app:layout_constraintTop_toBottomOf="@+id/etSantimetreHG" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/usa_uk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etInchHG" />
+
+        <EditText
+            android:id="@+id/etKsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/tvKsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/ksi"
+            app:layout_constraintBottom_toBottomOf="@+id/etKsi"
+            app:layout_constraintStart_toEndOf="@+id/etKsi"
+            app:layout_constraintTop_toTopOf="@+id/etKsi" />
+
+        <EditText
+            android:id="@+id/etPsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etKsi" />
+
+        <TextView
+            android:id="@+id/tvPsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/psi"
+            app:layout_constraintBottom_toBottomOf="@+id/etPsi"
+            app:layout_constraintStart_toEndOf="@+id/etPsi"
+            app:layout_constraintTop_toBottomOf="@+id/etKsi" />
+
+        <EditText
+            android:id="@+id/etPsf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPsi" />
+
+        <TextView
+            android:id="@+id/tvPsf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/psf"
+
+            app:layout_constraintBottom_toBottomOf="@+id/etPsf"
+            app:layout_constraintStart_toEndOf="@+id/etPsf"
+            app:layout_constraintTop_toBottomOf="@+id/etPsi" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/usa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPsf" />
+
+        <EditText
+            android:id="@+id/etTsiUSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/tvTsiUsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/tsi_usa"
+            app:layout_constraintBottom_toBottomOf="@+id/etTsiUSA"
+            app:layout_constraintStart_toEndOf="@+id/etTsiUSA"
+            app:layout_constraintTop_toTopOf="@+id/etTsiUSA" />
+
+        <EditText
+            android:id="@+id/etTsfUSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTsiUSA" />
+
+        <TextView
+            android:id="@+id/tvTsfUSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/tsf_usa"
+            app:layout_constraintBottom_toBottomOf="@+id/etTsfUSA"
+            app:layout_constraintStart_toEndOf="@+id/etTsfUSA"
+            app:layout_constraintTop_toBottomOf="@+id/etTsiUSA" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/uk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTsfUSA" />
+
+        <EditText
+            android:id="@+id/etTsiUK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/tvTsiUK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/tsi_uk"
+            app:layout_constraintBottom_toBottomOf="@+id/etTsiUK"
+            app:layout_constraintStart_toEndOf="@+id/etTsiUK"
+            app:layout_constraintTop_toTopOf="@+id/etTsiUK" />
+
+        <EditText
+            android:id="@+id/etTsfUK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTsiUK" />
+
+        <TextView
+            android:id="@+id/tvTsfUK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/tsf_uk"
+            app:layout_constraintBottom_toBottomOf="@+id/etTsfUK"
+            app:layout_constraintStart_toEndOf="@+id/etTsfUK"
+            app:layout_constraintTop_toBottomOf="@+id/etTsiUK" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,6 +1,7 @@
 package ru.sergeipavlov.metrology.kip.transformation;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,7 @@ import ru.sergeipavlov.metrology.AdapterMainMenu;
 import ru.sergeipavlov.metrology.R;
 
 public class UnitTrasformationActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,7 @@ public class UnitTrasformationActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new AdapterMainMenu(generateData()));
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+
     }
 
     private List<String> generateData() {

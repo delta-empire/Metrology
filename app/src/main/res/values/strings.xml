@@ -22,6 +22,47 @@
     <string name="one_hundred">100</string>
     <string name="scale_signal_calc">Расчёт шкала-сигнал</string>
 
+    <string name="international_system">Международная система СИ</string>
+    <string name="derrivative">Производные и внесистемные</string>
+
+    <string name="atmosphere">Атмосфера</string>
+    <string name="water_column">Водяной столб</string>
+    <string name="hg_column">Ртутный столб</string>
+    <string name="usa_uk">США и Британия</string>
+    <string name="usa">США</string>
+    <string name="uk">Британия</string>
+
+
+    <string name="pascal">Па</string>
+    <string name="kgs_sm2">кгс/см2</string>
+    <string name="kgs_m2">кгс/м2</string>
+    <string name="milli_bar">мбар</string>
+    <string name="bar">бар</string>
+    <string name="kPa">кПа</string>
+    <string name="MPa">МПа</string>
+    <string name="N_m2">Н/м2</string>
+    <string name="kN_m2">кН/м2</string>
+    <string name="MN_m2">МН/м2</string>
+    <string name="N_sm2">Н/см2</string>
+    <string name="N_mm2">Н/мм2</string>
+    <string name="atmosphere_">атм</string>
+    <string name="technical_atmosphere">ат</string>
+    <string name="millimetre_h2o">мм вод.ст.</string>
+    <string name="santimetre_h2o">см вод.ст.</string>
+    <string name="metre_h2o">м вод.ст.</string>
+    <string name="inch_h2o">дюймов вод.ст.</string>
+    <string name="fut_h2o">футов вод.ст.</string>
+    <string name="millimetre_hg">мм рт.ст.</string>
+    <string name="santimetre_hg">см рт.ст.</string>
+    <string name="inch_hg">дюймов рт.ст.</string>
+    <string name="ksi">ksi</string>
+    <string name="psi">psi</string>
+    <string name="psf">psf</string>
+    <string name="tsi_usa">tsi</string>
+    <string name="tsf_usa">tsf</string>
+    <string name="tsi_uk">tsi</string>
+    <string name="tsf_uk">tsf</string>
+
     <string-array name="main_menu_list">
         <item>Расчёт шкала-сигнал</item>
         <item>Перевод единиц измерения</item>
