@@ -62,6 +62,9 @@
     <string name="tsf_usa">tsf</string>
     <string name="tsi_uk">tsi</string>
     <string name="tsf_uk">tsf</string>
+    
+    <string name="celsium_degrees">\u2103</string>
+    <string name="fahrengeit_degrees">"\u212A"</string>
 
     <string-array name="main_menu_list">
         <item>Расчёт шкала-сигнал</item>

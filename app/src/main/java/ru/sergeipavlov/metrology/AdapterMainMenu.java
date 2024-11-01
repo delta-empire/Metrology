@@ -13,6 +13,7 @@ import java.util.List;
 
 import ru.sergeipavlov.metrology.kip.ScaleSignalActivity;
 import ru.sergeipavlov.metrology.kip.transformation.PressureActivity;
+import ru.sergeipavlov.metrology.kip.transformation.TemperatureActivity;
 import ru.sergeipavlov.metrology.kip.transformation.UnitTrasformationActivity;
 
 public class AdapterMainMenu extends RecyclerView.Adapter<AdapterMainMenu.ViewHolder> {
@@ -57,6 +58,9 @@ public class AdapterMainMenu extends RecyclerView.Adapter<AdapterMainMenu.ViewHo
                 v.getContext().startActivity(intent);
             } else if (this.tv_main_menu_list.getText().equals("Давление")) {
                 Intent intent = new Intent(v.getContext(), PressureActivity.class);
+                v.getContext().startActivity(intent);
+            } else if (this.tv_main_menu_list.getText().equals("Температура")) {
+                Intent intent = new Intent(v.getContext(), TemperatureActivity.class);
                 v.getContext().startActivity(intent);
             }
         }

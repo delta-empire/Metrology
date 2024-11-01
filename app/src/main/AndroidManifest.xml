@@ -35,6 +35,10 @@
             android:name=".kip.transformation.PressureActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".kip.transformation.TemperatureActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

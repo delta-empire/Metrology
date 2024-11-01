@@ -42,3 +42,13 @@ public class UnitTransformationCalc {
                 TsiUK, TsfUK};
     }
 }
+
+double[] celsiumToAnother(double celsium) {
+    double[] results;
+
+    double degreeCelsium = celsium;
+    double degreeKelvin = celsium + 273.15;
+    double degreeFahrengeit = 9 / 5 * celsium + 32;
+    double degreeRankin = 0;
+    double degreeReomur = 0;
+}
