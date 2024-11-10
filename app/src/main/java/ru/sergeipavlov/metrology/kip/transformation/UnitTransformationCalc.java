@@ -41,14 +41,17 @@ public class UnitTransformationCalc {
                 MetreH2O, InH2O, FtH2O, MillimetreHG, SantimetreHG, InHG, Ksi, Psi, Psf, TsiUSA, TsfUSA,
                 TsiUK, TsfUK};
     }
+
+    double[] celsiumToAnother(double celsium) {
+        double[] results;
+
+        double degreeCelsium = celsium;
+        double degreeKelvin = celsium + 273.15;
+        double degreeFahrengeit = 9 / 5 * celsium + 32;
+        double degreeRankin = 0;
+        double degreeReomur = 0;
+        return results = new double[]{degreeKelvin, degreeFahrengeit, degreeRankin, degreeReomur};
+    }
 }
 
-double[] celsiumToAnother(double celsium) {
-    double[] results;
 
-    double degreeCelsium = celsium;
-    double degreeKelvin = celsium + 273.15;
-    double degreeFahrengeit = 9 / 5 * celsium + 32;
-    double degreeRankin = 0;
-    double degreeReomur = 0;
-}

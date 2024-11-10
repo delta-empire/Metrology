@@ -19,7 +19,7 @@ import ru.sergeipavlov.metrology.R;
 
 public class ScaleSignalActivity extends AppCompatActivity {
 
-    DecimalFormat decimalFormat = new DecimalFormat("#.###");
+    DecimalFormat decimalFormat = new DecimalFormat("#.####");
 
     private EditText etStartPhysicalValue,
             etEndPhysicalScale,

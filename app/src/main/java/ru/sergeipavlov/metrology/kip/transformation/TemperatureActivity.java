@@ -1,6 +1,7 @@
 package ru.sergeipavlov.metrology.kip.transformation;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -87,5 +88,22 @@ public class TemperatureActivity extends AppCompatActivity {
         etTempretureRankin = findViewById(R.id.etTemperatureRankin);
         etTemperatureReomur = findViewById(R.id.etTemperatureReomur);
 
+        etTemperatureCelsium.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                getEtTemperatureCelsium();
+                double celsium = Double.parseDouble(etTemperatureCelsium.getText().toString());
+                calc(celsium);
+            }
+        });
+
+    }
+
+    void calc(double celsium) {
+        double[] results = unitTransformationCalc.celsiumToAnother(celsium);
+        etTemperatureKelvin.setText(String.valueOf(results[0]));
+        etTemperatureFahrengeit.setText(String.valueOf(results[1]));
+        etTempretureRankin.setText(String.valueOf(results[2]));
+        etTemperatureReomur.setText(String.valueOf(results[3]));
     }
 }
