@@ -18,6 +18,7 @@ import java.util.List;
 
 import ru.sergeipavlov.metrology.AdapterMainMenu;
 import ru.sergeipavlov.metrology.R;
+import ru.sergeipavlov.metrology.kip.AdapterUnitTransformation;
 
 public class UnitTrasformationActivity extends AppCompatActivity {
 
@@ -34,9 +35,8 @@ public class UnitTrasformationActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new AdapterMainMenu(generateData()));
+        recyclerView.setAdapter(new AdapterUnitTransformation(generateData()));
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
-
     }
 
     private List<String> generateData() {

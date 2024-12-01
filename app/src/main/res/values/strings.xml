@@ -72,11 +72,28 @@
     </string-array>
 
     <string-array name="unit_transformation_list">
-        <item>Расход</item>
+        <item>Расход (объёмный)</item>
+        <item>Расход (массовый)</item>
         <item>Давление</item>
         <item>Температура</item>
         <item>Масса</item>
         <item>Расстояние</item>
+        <item>Объём</item>
+        <item>Площадь</item>
+        <item>Скорость</item>
+        <item>Время</item>
+        <item>Ускорение</item>
+        <item>Плотность</item>
+        <item>Энергия</item>
+        <item>Мощность</item>
+        <item>Сила</item>
+        <item>Угловая мера</item>
+        <item>Скорость вращения</item>
+        <item>Момент силы</item>
+        <item>Ионизирующее излучение</item>
+        <item>Радиоактивность</item>
+        <item>Деибелы</item>
+        <item>Вязкость</item>
     </string-array>
 
 </resources>
