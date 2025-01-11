@@ -31,12 +31,93 @@
             android:name=".kip.transformation.UnitTrasformationActivity"
             android:exported="true">
         </activity>
+
+        <activity
+            android:name=".kip.transformation.AngularMeasureActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.BoostActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.DecibelsActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.DensityActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.EnergyActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.IozonicRadiationActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.LenghtActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.WeightActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.MassConsuptionActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.MometPowerActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.PowerActivity"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".kip.transformation.PressureActivity"
             android:exported="true">
         </activity>
         <activity
+            android:name=".kip.transformation.RadioactivityActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.RotationSpeedActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.SpeedActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.SquareActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.StrenghtActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".kip.transformation.TemperatureActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.TimeActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.ViscosityActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.VolumeActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".kip.transformation.VolumetricConsumtionActivity"
             android:exported="true">
         </activity>
     </application>
