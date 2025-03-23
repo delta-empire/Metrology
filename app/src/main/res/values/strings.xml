@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Metrology</string>
-    <string name="element_text">Element</string>
+    <string name="international_system_of_units">International system of Units (SI)</string>
+    <string name="US_and_Britain">US and Britian</string>
+    <string name="rarely_used">Rarely used</string>
 
+    <string name="TemperatureCelcium">"\u2103"</string>
+    <string name="TemperatureKelvin">"\u212A"</string>
+    <string name="TemperatureFahrenheit">"\u2109"</string>
+    <string name="TemperatureRankina">"\u00B0R"</string>
+    <string name="TemperatureReaumur">"\u00B0Re"</string>
 </resources>

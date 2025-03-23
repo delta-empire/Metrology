@@ -1,20 +1,19 @@
-package ru.sergeipavlov.metrology.physics;
+package ru.sergeipavlov.metrology.kip;
 
-public class Pressure {
-
+public class Temperature {
     //Международная система СИ
-        //градусы Цельсия
+    //градусы Цельсия
     private double celcium;
-        //градусы Кельвина
-        private double kelvin;
+    //градусы Кельвина
+    private double kelvin;
     //США и Британия
-        //градусы Фаренгейта
+    //градусы Фаренгейта
     private double fahrenheit;
     //Редкоиспользуемые
-        //градусы Ранкина
+    //градусы Ранкина
     private double rankina;
-        //градусы Реомюра
-        private double reaumur;
+    //градусы Реомюра
+    private double reaumur;
 
     public double getCelcium() {
         return celcium;

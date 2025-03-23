@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_temperature">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/international_system_of_units"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTemperatureCelcium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/TemperatureCelcium"
+        app:layout_constraintBottom_toBottomOf="@+id/etTemperatureCelcium"
+        app:layout_constraintStart_toEndOf="@+id/etTemperatureCelcium"
+        app:layout_constraintTop_toTopOf="@+id/etTemperatureCelcium" />
+
+    <EditText
+        android:id="@+id/etTemperatureKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTemperatureCelcium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/TemperatureKelvin"
+        app:layout_constraintBottom_toBottomOf="@+id/etTemperatureKelvin"
+        app:layout_constraintStart_toEndOf="@+id/etTemperatureKelvin"
+        app:layout_constraintTop_toTopOf="@+id/etTemperatureKelvin" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/US_and_Britain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTemperatureKelvin" />
+
+    <EditText
+        android:id="@+id/etTemperatureFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/TemperatureFahrenheit"
+        app:layout_constraintBottom_toBottomOf="@+id/etTemperatureFahrenheit"
+        app:layout_constraintStart_toEndOf="@+id/etTemperatureFahrenheit"
+        app:layout_constraintTop_toTopOf="@+id/etTemperatureFahrenheit" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rarely_used"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTemperatureFahrenheit" />
+
+    <EditText
+        android:id="@+id/etTemperatureRankina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/TemperatureRankina"
+        app:layout_constraintBottom_toBottomOf="@+id/etTemperatureRankina"
+        app:layout_constraintStart_toEndOf="@+id/etTemperatureRankina"
+        app:layout_constraintTop_toTopOf="@+id/etTemperatureRankina" />
+
+    <EditText
+        android:id="@+id/etTemperatureReaumur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTemperatureRankina" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/TemperatureReaumur"
+        app:layout_constraintBottom_toBottomOf="@+id/etTemperatureReaumur"
+        app:layout_constraintStart_toEndOf="@+id/etTemperatureReaumur"
+        app:layout_constraintTop_toTopOf="@+id/etTemperatureReaumur" />
+</androidx.constraintlayout.widget.ConstraintLayout>
