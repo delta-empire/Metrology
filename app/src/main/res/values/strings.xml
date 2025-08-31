@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Metrology</string>
+
+    <string-array name="main_menu_items">
+        <item>Единицы измерения</item>
+        <item>Шкала-сигнал</item>
+        <item>Датчики температуры</item>
+        <item>Сужающие устройства</item>
+    </string-array>
 </resources>
