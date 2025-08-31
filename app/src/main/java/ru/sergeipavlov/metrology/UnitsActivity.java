@@ -1,0 +1,44 @@
+package ru.sergeipavlov.metrology;
+
+import android.os.Bundle;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UnitsActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_units);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.units_root), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
+        RecyclerView recyclerView = findViewById(R.id.units_recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        List<UnitsAdapter.Item> items = new ArrayList<>();
+        items.add(new UnitsAdapter.Item(true, getString(R.string.base_units_title)));
+        for (String unit : getResources().getStringArray(R.array.base_units)) {
+            items.add(new UnitsAdapter.Item(false, unit));
+        }
+        items.add(new UnitsAdapter.Item(true, getString(R.string.derived_units_title)));
+        for (String unit : getResources().getStringArray(R.array.derived_units)) {
+            items.add(new UnitsAdapter.Item(false, unit));
+        }
+
+        recyclerView.setAdapter(new UnitsAdapter(items));
+    }
+}

@@ -1,6 +1,6 @@
 package ru.sergeipavlov.metrology;
 
-import android.content.Intent;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,10 +11,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
-    private final List<String> items;
+public class UnitsAdapter extends RecyclerView.Adapter<UnitsAdapter.ViewHolder> {
 
-    public MainAdapter(List<String> items) {
+    static class Item {
+        final boolean isHeader;
+        final String text;
+
+        Item(boolean isHeader, String text) {
+            this.isHeader = isHeader;
+            this.text = text;
+        }
+    }
+
+    private final List<Item> items;
+
+    public UnitsAdapter(List<Item> items) {
         this.items = items;
     }
 
@@ -28,12 +39,13 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.textView.setText(items.get(position));
-        holder.itemView.setOnClickListener(v -> {
-            if (holder.getBindingAdapterPosition() == 0) {
-                v.getContext().startActivity(new Intent(v.getContext(), UnitsActivity.class));
-            }
-        });
+        Item item = items.get(position);
+        holder.textView.setText(item.text);
+        if (item.isHeader) {
+            holder.textView.setTypeface(null, Typeface.BOLD);
+        } else {
+            holder.textView.setTypeface(null, Typeface.NORMAL);
+        }
     }
 
     @Override
@@ -44,10 +56,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     static class ViewHolder extends RecyclerView.ViewHolder {
         final TextView textView;
 
-        ViewHolder(View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(android.R.id.text1);
         }
     }
 }
-
