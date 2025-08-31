@@ -27,4 +27,13 @@
         <item>Частота</item>
         <item>Сила</item>
     </string-array>
+
+    <string name="desc_kelvin">Кельвин — единица термодинамической температуры СИ.</string>
+    <string name="desc_celsius">Градус Цельсия — единица измерения температуры по шкале Цельсия.</string>
+    <string name="desc_fahrenheit">Градус Фаренгейта — единица измерения температуры по шкале Фаренгейта.</string>
+    <string name="desc_reaumur">Градус Реомюра — единица температуры по шкале Реомюра.</string>
+    <string name="desc_romer">Градус Рёмера — единица температуры по шкале Рёмера.</string>
+    <string name="desc_rankine">Градус Ранкина — единица температуры по шкале Ранкина.</string>
+    <string name="desc_delisle">Градус Делиля — единица температуры по шкале Делиля.</string>
+    <string name="desc_newton">Градус Ньютона — единица температуры по шкале Ньютона.</string>
 </resources>

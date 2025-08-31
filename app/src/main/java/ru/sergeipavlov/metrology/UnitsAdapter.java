@@ -1,5 +1,6 @@
 package ru.sergeipavlov.metrology;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,8 +44,14 @@ public class UnitsAdapter extends RecyclerView.Adapter<UnitsAdapter.ViewHolder> 
         holder.textView.setText(item.text);
         if (item.isHeader) {
             holder.textView.setTypeface(null, Typeface.BOLD);
+            holder.itemView.setOnClickListener(null);
         } else {
             holder.textView.setTypeface(null, Typeface.NORMAL);
+            holder.itemView.setOnClickListener(v -> {
+                if ("Температура".equals(item.text)) {
+                    v.getContext().startActivity(new Intent(v.getContext(), TemperatureActivity.class));
+                }
+            });
         }
     }
 
