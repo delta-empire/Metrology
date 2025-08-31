@@ -23,6 +23,9 @@
         <activity
             android:name=".UnitsActivity"
             android:exported="false" />
+        <activity
+            android:name=".TemperatureActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
