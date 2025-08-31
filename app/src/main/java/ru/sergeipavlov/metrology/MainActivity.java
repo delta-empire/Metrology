@@ -28,12 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        List<String> items = Arrays.asList(
-                "Единицы измерения",
-                "Шкала-сигнал",
-                "Датчики температуры",
-                "Сужающие устройства"
-        );
+        List<String> items = Arrays.asList(getResources().getStringArray(R.array.main_menu_items));
         recyclerView.setAdapter(new MainAdapter(items));
     }
 }
