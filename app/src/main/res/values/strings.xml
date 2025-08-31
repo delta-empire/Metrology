@@ -7,4 +7,24 @@
         <item>Датчики температуры</item>
         <item>Сужающие устройства</item>
     </string-array>
+
+    <string name="base_units_title">Основные единицы СИ</string>
+    <string-array name="base_units">
+        <item>Время</item>
+        <item>Длина</item>
+        <item>Масса</item>
+        <item>Сила тока</item>
+        <item>Температура</item>
+        <item>Количество вещества</item>
+        <item>Сила света</item>
+    </string-array>
+
+    <string name="derived_units_title">Производные единицы СИ</string>
+    <string-array name="derived_units">
+        <item>Давление</item>
+        <item>Мощность</item>
+        <item>Энергия</item>
+        <item>Частота</item>
+        <item>Сила</item>
+    </string-array>
 </resources>
