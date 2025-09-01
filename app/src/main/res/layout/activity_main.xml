@@ -7,13 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/etCelsius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Celsius"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etFahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fahrenheit"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etKelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kelvin"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
