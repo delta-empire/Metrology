@@ -68,8 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 double value = Double.parseDouble(text);
-                int precision = Math.max(getDecimals(text), 3);
-                String format = "%" + "." + precision + "f";
+                String format = "%.3f";
 
                 double celsius;
                 double fahrenheit;
@@ -113,9 +112,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private int getDecimals(String text) {
-        int index = text.indexOf('.') ;
-        if (index < 0) return 0;
-        return text.length() - index - 1;
-    }
 }
