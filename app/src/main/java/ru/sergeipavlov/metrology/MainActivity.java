@@ -15,6 +15,8 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String FORMAT = "%.3f";
+
     private EditText etCelsius;
     private EditText etFahrenheit;
     private EditText etKelvin;
@@ -38,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         etCelsius.addTextChangedListener(new TemperatureWatcher(etCelsius));
         etFahrenheit.addTextChangedListener(new TemperatureWatcher(etFahrenheit));
         etKelvin.addTextChangedListener(new TemperatureWatcher(etKelvin));
+
+        etKelvin.setText(String.format(Locale.US, FORMAT, 0.0));
+        etKelvin.setSelection(etKelvin.getText().length());
     }
 
     private class TemperatureWatcher implements TextWatcher {
@@ -68,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 double value = Double.parseDouble(text);
-                String format = "%.3f";
 
                 double celsius;
                 double fahrenheit;
@@ -90,15 +94,15 @@ public class MainActivity extends AppCompatActivity {
 
                 isUpdating = true;
                 if (source != etCelsius) {
-                    etCelsius.setText(String.format(Locale.US, format, celsius));
+                    etCelsius.setText(String.format(Locale.US, FORMAT, celsius));
                     etCelsius.setSelection(etCelsius.getText().length());
                 }
                 if (source != etFahrenheit) {
-                    etFahrenheit.setText(String.format(Locale.US, format, fahrenheit));
+                    etFahrenheit.setText(String.format(Locale.US, FORMAT, fahrenheit));
                     etFahrenheit.setSelection(etFahrenheit.getText().length());
                 }
                 if (source != etKelvin) {
-                    etKelvin.setText(String.format(Locale.US, format, kelvin));
+                    etKelvin.setText(String.format(Locale.US, FORMAT, kelvin));
                     etKelvin.setSelection(etKelvin.getText().length());
                 }
                 isUpdating = false;
