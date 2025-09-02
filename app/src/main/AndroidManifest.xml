@@ -29,6 +29,9 @@
         <activity
             android:name=".CurrentActivity"
             android:exported="false" />
+        <activity
+            android:name=".TimeActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
