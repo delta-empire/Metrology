@@ -26,6 +26,9 @@
         <activity
             android:name=".TemperatureActivity"
             android:exported="false" />
+        <activity
+            android:name=".CurrentActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

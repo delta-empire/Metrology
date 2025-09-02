@@ -36,5 +36,9 @@
     <string name="desc_rankine">Градус Ранкина — единица температуры по шкале Ранкина.</string>
     <string name="desc_delisle">Градус Делиля — единица температуры по шкале Делиля.</string>
     <string name="desc_newton">Градус Ньютона — единица температуры по шкале Ньютона.</string>
+    <string name="desc_ampere">Ампер — единица силы тока СИ.</string>
+    <string name="desc_microampere">Микроампер — одна миллионная часть ампера.</string>
+    <string name="desc_milliampere">Миллиампер — одна тысячная часть ампера.</string>
+    <string name="desc_kiloampere">Килоампер — тысяча ампер.</string>
     <string name="warn_below_zero_kelvin">Температура не может быть ниже абсолютного нуля</string>
 </resources>

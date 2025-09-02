@@ -50,6 +50,8 @@ public class UnitsAdapter extends RecyclerView.Adapter<UnitsAdapter.ViewHolder> 
             holder.itemView.setOnClickListener(v -> {
                 if ("Температура".equals(item.text)) {
                     v.getContext().startActivity(new Intent(v.getContext(), TemperatureActivity.class));
+                } else if ("Сила тока".equals(item.text)) {
+                    v.getContext().startActivity(new Intent(v.getContext(), CurrentActivity.class));
                 }
             });
         }
