@@ -41,4 +41,15 @@
     <string name="desc_milliampere">Миллиампер — одна тысячная часть ампера.</string>
     <string name="desc_kiloampere">Килоампер — тысяча ампер.</string>
     <string name="warn_below_zero_kelvin">Температура не может быть ниже абсолютного нуля</string>
+    <string name="desc_second">Секунда — единица времени СИ.</string>
+    <string name="desc_microsecond">Микросекунда — одна миллионная доля секунды.</string>
+    <string name="desc_millisecond">Миллисекунда — одна тысячная доля секунды.</string>
+    <string name="desc_minute">Минута — 60 секунд.</string>
+    <string name="desc_hour">Час — 60 минут.</string>
+    <string name="desc_day">Сутки — 24 часа.</string>
+    <string name="desc_week">Неделя — 7 суток.</string>
+    <string name="desc_year">Год — 365 суток.</string>
+    <string name="desc_century">Век — 100 лет.</string>
+    <string name="desc_millennium">Тысячелетие — 1000 лет.</string>
+    <string name="warn_negative_time">Время не может быть отрицательным</string>
 </resources>
