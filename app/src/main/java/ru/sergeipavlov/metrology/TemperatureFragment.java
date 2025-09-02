@@ -59,6 +59,19 @@ public class TemperatureFragment extends Fragment {
         addWatcher(rankine, Unit.RANKINE);
         addWatcher(delisle, Unit.DELISLE);
         addWatcher(newton, Unit.NEWTON);
+        // Initialize with absolute zero
+        isUpdating = true;
+        double k = 0.0;
+        int precision = 3;
+        setText(kelvin, fromKelvin(Unit.KELVIN, k), precision, false);
+        setText(celsius, fromKelvin(Unit.CELSIUS, k), precision, false);
+        setText(fahrenheit, fromKelvin(Unit.FAHRENHEIT, k), precision, false);
+        setText(reaumur, fromKelvin(Unit.REAUMUR, k), precision, false);
+        setText(romer, fromKelvin(Unit.ROMER, k), precision, false);
+        setText(rankine, fromKelvin(Unit.RANKINE, k), precision, false);
+        setText(delisle, fromKelvin(Unit.DELISLE, k), precision, false);
+        setText(newton, fromKelvin(Unit.NEWTON, k), precision, false);
+        isUpdating = false;
 
         return view;
     }
@@ -84,17 +97,30 @@ public class TemperatureFragment extends Fragment {
                 }
                 try {
                     double value = Double.parseDouble(text);
-                    int precision = getPrecision(text);
+                    int precision = Math.max(getPrecision(text), 3);
                     isUpdating = true;
                     double k = toKelvin(unit, value);
-                    setText(kelvin, fromKelvin(Unit.KELVIN, k), precision, unit == Unit.KELVIN);
-                    setText(celsius, fromKelvin(Unit.CELSIUS, k), precision, unit == Unit.CELSIUS);
-                    setText(fahrenheit, fromKelvin(Unit.FAHRENHEIT, k), precision, unit == Unit.FAHRENHEIT);
-                    setText(reaumur, fromKelvin(Unit.REAUMUR, k), precision, unit == Unit.REAUMUR);
-                    setText(romer, fromKelvin(Unit.ROMER, k), precision, unit == Unit.ROMER);
-                    setText(rankine, fromKelvin(Unit.RANKINE, k), precision, unit == Unit.RANKINE);
-                    setText(delisle, fromKelvin(Unit.DELISLE, k), precision, unit == Unit.DELISLE);
-                    setText(newton, fromKelvin(Unit.NEWTON, k), precision, unit == Unit.NEWTON);
+                    if (k < 0.0) {
+                        Toast.makeText(requireContext(), R.string.warn_below_zero_kelvin, Toast.LENGTH_SHORT).show();
+                        k = 0.0;
+                        setText(kelvin, fromKelvin(Unit.KELVIN, k), precision, false);
+                        setText(celsius, fromKelvin(Unit.CELSIUS, k), precision, false);
+                        setText(fahrenheit, fromKelvin(Unit.FAHRENHEIT, k), precision, false);
+                        setText(reaumur, fromKelvin(Unit.REAUMUR, k), precision, false);
+                        setText(romer, fromKelvin(Unit.ROMER, k), precision, false);
+                        setText(rankine, fromKelvin(Unit.RANKINE, k), precision, false);
+                        setText(delisle, fromKelvin(Unit.DELISLE, k), precision, false);
+                        setText(newton, fromKelvin(Unit.NEWTON, k), precision, false);
+                    } else {
+                        setText(kelvin, fromKelvin(Unit.KELVIN, k), precision, unit == Unit.KELVIN);
+                        setText(celsius, fromKelvin(Unit.CELSIUS, k), precision, unit == Unit.CELSIUS);
+                        setText(fahrenheit, fromKelvin(Unit.FAHRENHEIT, k), precision, unit == Unit.FAHRENHEIT);
+                        setText(reaumur, fromKelvin(Unit.REAUMUR, k), precision, unit == Unit.REAUMUR);
+                        setText(romer, fromKelvin(Unit.ROMER, k), precision, unit == Unit.ROMER);
+                        setText(rankine, fromKelvin(Unit.RANKINE, k), precision, unit == Unit.RANKINE);
+                        setText(delisle, fromKelvin(Unit.DELISLE, k), precision, unit == Unit.DELISLE);
+                        setText(newton, fromKelvin(Unit.NEWTON, k), precision, unit == Unit.NEWTON);
+                    }
                 } catch (NumberFormatException ignore) {
                 } finally {
                     isUpdating = false;
