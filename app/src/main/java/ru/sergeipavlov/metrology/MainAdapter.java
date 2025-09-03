@@ -33,6 +33,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             int pos = holder.getBindingAdapterPosition();
             if (pos == 0) {
                 v.getContext().startActivity(new Intent(v.getContext(), UnitsActivity.class));
+            } else if (pos == 1) {
+                v.getContext().startActivity(new Intent(v.getContext(), ScaleSignalActivity.class));
             } else if (pos == items.size() - 1) {
                 v.getContext().startActivity(new Intent(v.getContext(), SettingsActivity.class));
             }
