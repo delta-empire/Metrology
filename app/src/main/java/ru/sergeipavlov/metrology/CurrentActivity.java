@@ -3,9 +3,9 @@ package ru.sergeipavlov.metrology;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
+import ru.sergeipavlov.metrology.BaseActivity;
 
-public class CurrentActivity extends AppCompatActivity {
+public class CurrentActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
