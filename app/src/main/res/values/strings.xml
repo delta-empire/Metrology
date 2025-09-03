@@ -64,4 +64,9 @@
     <string name="theme_dark">Тёмная</string>
     <string name="theme_system">Системная</string>
     <string name="reset_defaults">Сбросить по умолчанию</string>
+
+    <string name="label_physical">Физическая величина</string>
+    <string name="label_signal">Унифицированный сигнал</string>
+    <string name="label_start">Начало</string>
+    <string name="label_end">Конец</string>
 </resources>

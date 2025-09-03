@@ -20,4 +20,13 @@
         <item>dark</item>
         <item>system</item>
     </string-array>
+
+    <string-array name="scale_types">
+        <item>Линейная шкала</item>
+        <item>Линейная, убывающая</item>
+        <item>Квадратичная шкала</item>
+        <item>Квадратичная, убывающая</item>
+        <item>Корнеизвлекающая шкала</item>
+        <item>Корнеизвлекающая, убывающая</item>
+    </string-array>
 </resources>
