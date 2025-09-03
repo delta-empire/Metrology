@@ -1,0 +1,23 @@
+<resources>
+    <string-array name="languages">
+        <item>@string/language_russian</item>
+        <item>@string/language_belarusian</item>
+        <item>@string/language_english</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>ru</item>
+        <item>be</item>
+        <item>en</item>
+    </string-array>
+
+    <string-array name="themes">
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+        <item>@string/theme_system</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>system</item>
+    </string-array>
+</resources>

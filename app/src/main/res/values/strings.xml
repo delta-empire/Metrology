@@ -6,6 +6,7 @@
         <item>Шкала-сигнал</item>
         <item>Датчики температуры</item>
         <item>Сужающие устройства</item>
+        <item>Настройки</item>
     </string-array>
 
     <string name="base_units_title">Основные единицы СИ</string>
@@ -52,4 +53,15 @@
     <string name="desc_century">Век — 100 лет.</string>
     <string name="desc_millennium">Тысячелетие — 1000 лет.</string>
     <string name="warn_negative_time">Время не может быть отрицательным</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="pref_language">Язык</string>
+    <string name="pref_theme">Тема</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_belarusian">Белорусский</string>
+    <string name="language_english">Английский</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_system">Системная</string>
+    <string name="reset_defaults">Сбросить по умолчанию</string>
 </resources>

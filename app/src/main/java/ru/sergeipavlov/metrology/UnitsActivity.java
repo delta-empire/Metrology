@@ -3,7 +3,7 @@ package ru.sergeipavlov.metrology;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
+import ru.sergeipavlov.metrology.BaseActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UnitsActivity extends AppCompatActivity {
+public class UnitsActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

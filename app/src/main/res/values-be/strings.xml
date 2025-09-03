@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Metrology</string>
+
+    <string-array name="main_menu_items">
+        <item>Адзіницы вымярэння</item>
+        <item>Шкала-сігнал</item>
+        <item>Датчыкі тэмпературы</item>
+        <item>Звужальныя прылады</item>
+        <item>Налады</item>
+    </string-array>
+
+    <string name="base_units_title">Асноўныя адзінкі СІ</string>
+    <string-array name="base_units">
+        <item>Час</item>
+        <item>Даўжыня</item>
+        <item>Маса</item>
+        <item>Сіла току</item>
+        <item>Тэмпература</item>
+        <item>Колькасць рэчыва</item>
+        <item>Сіла святла</item>
+    </string-array>
+
+    <string name="derived_units_title">Пахадныя адзінкі СІ</string>
+    <string-array name="derived_units">
+        <item>Ціск</item>
+        <item>Магутнасць</item>
+        <item>Энергія</item>
+        <item>Частата</item>
+        <item>Сіла</item>
+    </string-array>
+
+    <string name="desc_kelvin">Кельвін — адзінка тэрмадынамічнай тэмпературы СІ.</string>
+    <string name="desc_celsius">Градус Цэльсія — адзінка вымярэння тэмпературы па шкале Цэльсія.</string>
+    <string name="desc_fahrenheit">Градус Фарэнгейта — адзінка вымярэння тэмпературы па шкале Фарэнгейта.</string>
+    <string name="desc_reaumur">Градус Рэамюра — адзінка тэмпературы па шкале Рэамюра.</string>
+    <string name="desc_romer">Градус Рёмера — адзінка тэмпературы па шкале Рёмера.</string>
+    <string name="desc_rankine">Градус Ранкіна — адзінка тэмпературы па шкале Ранкіна.</string>
+    <string name="desc_delisle">Градус Делiля — адзінка тэмпературы па шкале Делiля.</string>
+    <string name="desc_newton">Градус Ньютона — адзінка тэмпературы па шкале Ньютона.</string>
+    <string name="desc_ampere">Ампер — адзінка сілы току СІ.</string>
+    <string name="desc_microampere">Мікраампер — адна мільённая частка ампера.</string>
+    <string name="desc_milliampere">Міліампер — адна тысячная частка ампера.</string>
+    <string name="desc_kiloampere">Кілаампер — тысяча ампер.</string>
+    <string name="warn_below_zero_kelvin">Тэмпература не можа быць ніжэй за абсалютны нуль</string>
+    <string name="desc_second">Секунда — адзінка часу СІ.</string>
+    <string name="desc_microsecond">Мікрасекунда — адна мільённая доля секунды.</string>
+    <string name="desc_millisecond">Мілісекунда — адна тысячная доля секунды.</string>
+    <string name="desc_minute">Хвіліна — 60 секунд.</string>
+    <string name="desc_hour">Гадзіна — 60 хвілін.</string>
+    <string name="desc_day">Суткі — 24 гадзіны.</string>
+    <string name="desc_week">Тыдзень — 7 сутак.</string>
+    <string name="desc_year">Год — 365 сутак.</string>
+    <string name="desc_century">Век — 100 гадоў.</string>
+    <string name="desc_millennium">Тысячагоддзе — 1000 гадоў.</string>
+    <string name="warn_negative_time">Час не можа быць адмоўным</string>
+
+    <string name="settings_title">Налады</string>
+    <string name="pref_language">Мова</string>
+    <string name="pref_theme">Тэма</string>
+    <string name="language_russian">Руская</string>
+    <string name="language_belarusian">Беларуская</string>
+    <string name="language_english">Англійская</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Цёмная</string>
+    <string name="theme_system">Сістэмная</string>
+    <string name="reset_defaults">Скінуць да стандартных</string>
+</resources>

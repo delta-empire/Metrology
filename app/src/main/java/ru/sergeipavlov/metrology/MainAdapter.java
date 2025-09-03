@@ -30,8 +30,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.textView.setText(items.get(position));
         holder.itemView.setOnClickListener(v -> {
-            if (holder.getBindingAdapterPosition() == 0) {
+            int pos = holder.getBindingAdapterPosition();
+            if (pos == 0) {
                 v.getContext().startActivity(new Intent(v.getContext(), UnitsActivity.class));
+            } else if (pos == items.size() - 1) {
+                v.getContext().startActivity(new Intent(v.getContext(), SettingsActivity.class));
             }
         });
     }

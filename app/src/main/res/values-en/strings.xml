@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Metrology</string>
+
+    <string-array name="main_menu_items">
+        <item>Units of measurement</item>
+        <item>Scale-signal</item>
+        <item>Temperature sensors</item>
+        <item>Constriction devices</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="base_units_title">Base SI units</string>
+    <string-array name="base_units">
+        <item>Time</item>
+        <item>Length</item>
+        <item>Mass</item>
+        <item>Electric current</item>
+        <item>Temperature</item>
+        <item>Amount of substance</item>
+        <item>Luminous intensity</item>
+    </string-array>
+
+    <string name="derived_units_title">Derived SI units</string>
+    <string-array name="derived_units">
+        <item>Pressure</item>
+        <item>Power</item>
+        <item>Energy</item>
+        <item>Frequency</item>
+        <item>Force</item>
+    </string-array>
+
+    <string name="desc_kelvin">The kelvin is the SI unit of thermodynamic temperature.</string>
+    <string name="desc_celsius">Degree Celsius is a unit of temperature on the Celsius scale.</string>
+    <string name="desc_fahrenheit">Degree Fahrenheit is a unit of temperature on the Fahrenheit scale.</string>
+    <string name="desc_reaumur">Degree Réaumur is a temperature unit on the Réaumur scale.</string>
+    <string name="desc_romer">Degree Rømer is a temperature unit on the Rømer scale.</string>
+    <string name="desc_rankine">Degree Rankine is a temperature unit on the Rankine scale.</string>
+    <string name="desc_delisle">Degree Delisle is a temperature unit on the Delisle scale.</string>
+    <string name="desc_newton">Degree Newton is a temperature unit on the Newton scale.</string>
+    <string name="desc_ampere">Ampere is the SI unit of electric current.</string>
+    <string name="desc_microampere">Microampere is one millionth of an ampere.</string>
+    <string name="desc_milliampere">Milliampere is one thousandth of an ampere.</string>
+    <string name="desc_kiloampere">Kiloampere is a thousand amperes.</string>
+    <string name="warn_below_zero_kelvin">Temperature cannot be below absolute zero</string>
+    <string name="desc_second">The second is the SI unit of time.</string>
+    <string name="desc_microsecond">Microsecond is one millionth of a second.</string>
+    <string name="desc_millisecond">Millisecond is one thousandth of a second.</string>
+    <string name="desc_minute">Minute is 60 seconds.</string>
+    <string name="desc_hour">Hour is 60 minutes.</string>
+    <string name="desc_day">Day is 24 hours.</string>
+    <string name="desc_week">Week is 7 days.</string>
+    <string name="desc_year">Year is 365 days.</string>
+    <string name="desc_century">Century is 100 years.</string>
+    <string name="desc_millennium">Millennium is 1000 years.</string>
+    <string name="warn_negative_time">Time cannot be negative</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="pref_language">Language</string>
+    <string name="pref_theme">Theme</string>
+    <string name="language_russian">Russian</string>
+    <string name="language_belarusian">Belarusian</string>
+    <string name="language_english">English</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+    <string name="reset_defaults">Reset to default</string>
+</resources>
