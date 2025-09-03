@@ -30,13 +30,22 @@ public class UnitsActivity extends BaseActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<UnitsAdapter.Item> items = new ArrayList<>();
-        items.add(new UnitsAdapter.Item(true, getString(R.string.base_units_title)));
-        for (String unit : getResources().getStringArray(R.array.base_units)) {
-            items.add(new UnitsAdapter.Item(false, unit));
+        items.add(new UnitsAdapter.Item(true, getString(R.string.base_units_title), null));
+        String[] baseUnits = getResources().getStringArray(R.array.base_units);
+        for (int i = 0; i < baseUnits.length; i++) {
+            Class<?> activity = null;
+            if (i == 0) {
+                activity = TimeActivity.class;
+            } else if (i == 3) {
+                activity = CurrentActivity.class;
+            } else if (i == 4) {
+                activity = TemperatureActivity.class;
+            }
+            items.add(new UnitsAdapter.Item(false, baseUnits[i], activity));
         }
-        items.add(new UnitsAdapter.Item(true, getString(R.string.derived_units_title)));
+        items.add(new UnitsAdapter.Item(true, getString(R.string.derived_units_title), null));
         for (String unit : getResources().getStringArray(R.array.derived_units)) {
-            items.add(new UnitsAdapter.Item(false, unit));
+            items.add(new UnitsAdapter.Item(false, unit, null));
         }
 
         recyclerView.setAdapter(new UnitsAdapter(items));
