@@ -54,6 +54,33 @@
     <string name="desc_millennium">Тысячелетие — 1000 лет.</string>
     <string name="warn_negative_time">Время не может быть отрицательным</string>
 
+    <string name="desc_kilogram">Килограмм — единица массы СИ.</string>
+    <string name="desc_gram">Грамм — одна тысячная килограмма.</string>
+    <string name="desc_milligram">Миллиграмм — одна миллионная килограмма.</string>
+    <string name="desc_centner">Метрический центнер равен 100 килограммам.</string>
+    <string name="desc_tonne">Тонна равна 1000 килограммам.</string>
+    <string name="desc_carat">Карат равен 200 миллиграммам.</string>
+    <string name="desc_newton_force">Ньютон — единица силы; масса определяется как N/9,80665.</string>
+    <string name="desc_stone">Стоун — британская единица, равная 14 фунтам (≈6,35 кг).</string>
+    <string name="desc_pound">Фунт — единица массы США и Британии, равная 0,45359237 кг.</string>
+    <string name="desc_ounce">Унция — 1/16 фунта (≈28,35 г).</string>
+    <string name="desc_dram">Драм — 1/16 унции (≈1,77 г).</string>
+    <string name="desc_grain">Гран — 1/7000 фунта (≈64,8 мг).</string>
+    <string name="desc_short_ton">Короткая тонна (США) — 2000 фунтов (≈907 кг).</string>
+    <string name="desc_short_hundredweight">Короткий центнер (США) — 100 фунтов (≈45,36 кг).</string>
+    <string name="desc_long_ton">Длинная тонна (Британия) — 2240 фунтов (≈1016 кг).</string>
+    <string name="desc_long_hundredweight">Длинный центнер (Британия) — 112 фунтов (≈50,8 кг).</string>
+    <string name="desc_troy_pound">Тройский фунт — 12 тройских унций (≈0,373 кг).</string>
+    <string name="desc_troy_ounce">Тройская унция — 31,1034768 г.</string>
+    <string name="desc_pennyweight">Пеннивейт — 1/20 тройской унции (≈1,555 г).</string>
+    <string name="desc_mite">Майт — 1/24 грана (≈0,0027 г).</string>
+    <string name="desc_doit">Дойт — 1/24 майта (≈0,00011 г).</string>
+    <string name="mass_us_uk_title">США и Британия</string>
+    <string name="mass_us_title">США</string>
+    <string name="mass_uk_title">Британия</string>
+    <string name="mass_troy_title">Тройская система</string>
+    <string name="warn_negative_mass">Масса не может быть отрицательной</string>
+
     <string name="settings_title">Настройки</string>
     <string name="pref_language">Язык</string>
     <string name="pref_theme">Тема</string>

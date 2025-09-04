@@ -24,6 +24,9 @@
             android:name=".UnitsActivity"
             android:exported="false" />
         <activity
+            android:name=".MassActivity"
+            android:exported="false" />
+        <activity
             android:name=".TemperatureActivity"
             android:exported="false" />
         <activity
