@@ -36,6 +36,8 @@ public class UnitsActivity extends BaseActivity {
             Class<?> activity = null;
             if (i == 0) {
                 activity = TimeActivity.class;
+            } else if (i == 2) {
+                activity = MassActivity.class;
             } else if (i == 3) {
                 activity = CurrentActivity.class;
             } else if (i == 4) {

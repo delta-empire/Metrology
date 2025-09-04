@@ -54,6 +54,33 @@
     <string name="desc_millennium">Millennium is 1000 years.</string>
     <string name="warn_negative_time">Time cannot be negative</string>
 
+    <string name="desc_kilogram">Kilogram is the SI unit of mass.</string>
+    <string name="desc_gram">Gram is one thousandth of a kilogram.</string>
+    <string name="desc_milligram">Milligram is one millionth of a kilogram.</string>
+    <string name="desc_centner">Metric centner equals 100 kilograms.</string>
+    <string name="desc_tonne">Tonne equals 1000 kilograms.</string>
+    <string name="desc_carat">Carat equals 200 milligrams.</string>
+    <string name="desc_newton_force">Newton is the SI unit of force; mass is N/9.80665.</string>
+    <string name="desc_stone">Stone is a British unit equal to 14 pounds (≈6.35 kg).</string>
+    <string name="desc_pound">Pound is a US and UK unit equal to 0.45359237 kg.</string>
+    <string name="desc_ounce">Ounce is 1/16 of a pound (≈28.35 g).</string>
+    <string name="desc_dram">Dram is 1/16 of an ounce (≈1.77 g).</string>
+    <string name="desc_grain">Grain is 1/7000 of a pound (≈64.8 mg).</string>
+    <string name="desc_short_ton">Short ton (US) is 2000 pounds (≈907 kg).</string>
+    <string name="desc_short_hundredweight">Short hundredweight (US) is 100 pounds (≈45.36 kg).</string>
+    <string name="desc_long_ton">Long ton (UK) is 2240 pounds (≈1016 kg).</string>
+    <string name="desc_long_hundredweight">Long hundredweight (UK) is 112 pounds (≈50.8 kg).</string>
+    <string name="desc_troy_pound">Troy pound is 12 troy ounces (≈0.373 kg).</string>
+    <string name="desc_troy_ounce">Troy ounce equals 31.1034768 g.</string>
+    <string name="desc_pennyweight">Pennyweight is 1/20 of a troy ounce (≈1.555 g).</string>
+    <string name="desc_mite">Mite is 1/24 of a grain (≈0.0027 g).</string>
+    <string name="desc_doit">Doit is 1/24 of a mite (≈0.00011 g).</string>
+    <string name="mass_us_uk_title">US and Britain</string>
+    <string name="mass_us_title">US</string>
+    <string name="mass_uk_title">Britain</string>
+    <string name="mass_troy_title">Troy system</string>
+    <string name="warn_negative_mass">Mass cannot be negative</string>
+
     <string name="settings_title">Settings</string>
     <string name="pref_language">Language</string>
     <string name="pref_theme">Theme</string>
