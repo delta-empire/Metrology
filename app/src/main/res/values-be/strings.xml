@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Metrology</string>
 
     <string-array name="main_menu_items">
         <item>Адзіницы вымярэння</item>
@@ -65,7 +64,6 @@
     <string name="desc_pound">Фунт — адзінка масы ЗША і Брытаніі, роўная 0,45359237 кг.</string>
     <string name="desc_ounce">Унцыя — 1/16 фунта (≈28,35 г).</string>
     <string name="desc_dram">Драм — 1/16 унцыі (≈1,77 г).</string>
-    <string name="desc_grain">Гран — 1/7000 фунта (≈64,8 мг).</string>
     <string name="desc_short_ton">Кароткая тона (ЗША) — 2000 фунтаў (≈907 кг).</string>
     <string name="desc_short_hundredweight">Кароткі цэнтнер (ЗША) — 100 фунтаў (≈45,36 кг).</string>
     <string name="desc_long_ton">Доўгая тона (Брытанія) — 2240 фунтаў (≈1016 кг).</string>
@@ -73,8 +71,6 @@
     <string name="desc_troy_pound">Тройскі фунт — 12 тройскіх унцый (≈0,373 кг).</string>
     <string name="desc_troy_ounce">Тройская унцыя — 31,1034768 г.</string>
     <string name="desc_pennyweight">Пеніўейт — 1/20 тройскай унцыі (≈1,555 г).</string>
-    <string name="desc_mite">Майт — 1/24 грана (≈0,0027 г).</string>
-    <string name="desc_doit">Дойт — 1/24 майта (≈0,00011 г).</string>
     <string name="mass_us_uk_title">ЗША і Брытанія</string>
     <string name="mass_us_title">ЗША</string>
     <string name="mass_uk_title">Брытанія</string>
@@ -87,7 +83,6 @@
     <string name="language_russian">Руская</string>
     <string name="language_belarusian">Беларуская</string>
     <string name="language_english">Англійская</string>
-    <string name="theme_light">Светлая</string>
     <string name="theme_dark">Цёмная</string>
     <string name="theme_system">Сістэмная</string>
     <string name="reset_defaults">Скінуць да стандартных</string>
