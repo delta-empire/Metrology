@@ -339,7 +339,7 @@
                 android:text="sh tn" />
         </LinearLayout>
 
-        <!-- short centner -->
+        <!-- short hundredweight -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -347,13 +347,13 @@
             android:gravity="center_vertical"
             android:paddingBottom="16dp">
             <EditText
-                android:id="@+id/edit_short_centner"
+                android:id="@+id/edit_short_hundredweight"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:inputType="numberDecimal|numberSigned" />
             <TextView
-                android:id="@+id/symbol_short_centner"
+                android:id="@+id/symbol_short_hundredweight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
@@ -393,7 +393,7 @@
                 android:text="lg tn" />
         </LinearLayout>
 
-        <!-- long centner -->
+        <!-- long hundredweight -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -401,13 +401,13 @@
             android:gravity="center_vertical"
             android:paddingBottom="16dp">
             <EditText
-                android:id="@+id/edit_long_centner"
+                android:id="@+id/edit_long_hundredweight"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:inputType="numberDecimal|numberSigned" />
             <TextView
-                android:id="@+id/symbol_long_centner"
+                android:id="@+id/symbol_long_hundredweight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
@@ -516,26 +516,26 @@
                 android:text="mite" />
         </LinearLayout>
 
-        <!-- doyt -->
+        <!-- doit -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical">
             <EditText
-                android:id="@+id/edit_doyt"
+                android:id="@+id/edit_doit"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:inputType="numberDecimal|numberSigned" />
             <TextView
-                android:id="@+id/symbol_doyt"
+                android:id="@+id/symbol_doit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
                 android:paddingStart="8dp"
-                android:text="doyt" />
+                android:text="doit" />
         </LinearLayout>
 
     </LinearLayout>
