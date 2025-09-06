@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">Metrology</string>
-
     <string-array name="main_menu_items">
         <item>Units of measurement</item>
         <item>Scale-signal</item>
