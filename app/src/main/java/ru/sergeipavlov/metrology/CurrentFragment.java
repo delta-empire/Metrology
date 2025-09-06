@@ -77,7 +77,7 @@ public class CurrentFragment extends Fragment {
                 }
                 try {
                     double value = Double.parseDouble(text);
-                    int precision = getPrecision(text);
+                    int precision = Math.max(getPrecision(text), 3);
                     isUpdating = true;
                     double a = toAmpere(unit, value);
                     setText(ampere, fromAmpere(Unit.AMPERE, a), precision, unit == Unit.AMPERE);
