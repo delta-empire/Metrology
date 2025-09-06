@@ -31,6 +31,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         holder.textView.setText(items.get(position));
         holder.itemView.setOnClickListener(v -> {
             int pos = holder.getBindingAdapterPosition();
+            if (pos == RecyclerView.NO_POSITION) {
+                return;
+            }
             if (pos == 0) {
                 v.getContext().startActivity(new Intent(v.getContext(), UnitsActivity.class));
             } else if (pos == 1) {

@@ -30,6 +30,12 @@
             android:name=".TemperatureActivity"
             android:exported="false" />
         <activity
+            android:name=".LengthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MassActivity"
+            android:exported="false" />
+        <activity
             android:name=".CurrentActivity"
             android:exported="false" />
         <activity
