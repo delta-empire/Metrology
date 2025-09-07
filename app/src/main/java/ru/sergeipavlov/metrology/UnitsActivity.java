@@ -48,8 +48,13 @@ public class UnitsActivity extends BaseActivity {
             items.add(new UnitsAdapter.Item(false, baseUnits[i], activity));
         }
         items.add(new UnitsAdapter.Item(true, getString(R.string.derived_units_title), null));
-        for (String unit : getResources().getStringArray(R.array.derived_units)) {
-            items.add(new UnitsAdapter.Item(false, unit, null));
+        String[] derivedUnits = getResources().getStringArray(R.array.derived_units);
+        for (int i = 0; i < derivedUnits.length; i++) {
+            Class<?> activity = null;
+            if (i == 0) {
+                activity = PressureActivity.class;
+            }
+            items.add(new UnitsAdapter.Item(false, derivedUnits[i], activity));
         }
 
         recyclerView.setAdapter(new UnitsAdapter(items));
