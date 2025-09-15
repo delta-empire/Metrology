@@ -39,6 +39,11 @@
     <string name="desc_microampere">Microampere is one millionth of an ampere.</string>
     <string name="desc_milliampere">Milliampere is one thousandth of an ampere.</string>
     <string name="desc_kiloampere">Kiloampere is a thousand amperes.</string>
+    <string name="desc_hertz">The hertz is the SI unit of frequency.</string>
+    <string name="desc_kilohertz">Kilohertz is a thousand hertz.</string>
+    <string name="desc_megahertz">Megahertz is a million hertz.</string>
+    <string name="desc_gigahertz">Gigahertz is a billion hertz.</string>
+    <string name="warn_negative_frequency">Frequency cannot be negative</string>
     <string name="warn_below_zero_kelvin">Temperature cannot be below absolute zero</string>
     <string name="desc_second">The second is the SI unit of time.</string>
     <string name="desc_microsecond">Microsecond is one millionth of a second.</string>

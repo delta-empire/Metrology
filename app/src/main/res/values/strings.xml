@@ -41,6 +41,11 @@
     <string name="desc_microampere">Микроампер — одна миллионная часть ампера.</string>
     <string name="desc_milliampere">Миллиампер — одна тысячная часть ампера.</string>
     <string name="desc_kiloampere">Килоампер — тысяча ампер.</string>
+    <string name="desc_hertz">Герц — единица частоты СИ.</string>
+    <string name="desc_kilohertz">Килогерц — тысяча герц.</string>
+    <string name="desc_megahertz">Мегагерц — миллион герц.</string>
+    <string name="desc_gigahertz">Гигагерц — миллиард герц.</string>
+    <string name="warn_negative_frequency">Частота не может быть отрицательной</string>
     <string name="warn_below_zero_kelvin">Температура не может быть ниже абсолютного нуля</string>
     <string name="desc_second">Секунда — единица времени СИ.</string>
     <string name="desc_microsecond">Микросекунда — одна миллионная доля секунды.</string>

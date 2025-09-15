@@ -39,6 +39,9 @@
             android:name=".CurrentActivity"
             android:exported="false" />
         <activity
+            android:name=".FrequencyActivity"
+            android:exported="false" />
+        <activity
             android:name=".TimeActivity"
             android:exported="false" />
         <activity
