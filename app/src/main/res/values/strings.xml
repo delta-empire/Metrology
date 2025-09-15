@@ -81,6 +81,12 @@
     <string name="mass_troy_title">Тройская система</string>
     <string name="warn_negative_mass">Масса не может быть отрицательной</string>
 
+    <!-- Frequency conversion -->
+    <string name="desc_hertz">Герц — единица частоты СИ.</string>
+    <string name="desc_kilohertz">Килогерц — 1000 герц.</string>
+    <string name="desc_megahertz">Мегагерц — 1000000 герц.</string>
+    <string name="desc_gigahertz">Гигагерц — 1000000000 герц.</string>
+
     <string name="settings_title">Настройки</string>
     <string name="pref_language">Язык</string>
     <string name="pref_theme">Тема</string>

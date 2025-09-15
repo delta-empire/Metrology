@@ -79,6 +79,12 @@
     <string name="mass_troy_title">Troy system</string>
     <string name="warn_negative_mass">Mass cannot be negative</string>
 
+    <!-- Frequency conversion -->
+    <string name="desc_hertz">Hertz is the SI unit of frequency.</string>
+    <string name="desc_kilohertz">Kilohertz equals 1000 hertz.</string>
+    <string name="desc_megahertz">Megahertz equals 1000000 hertz.</string>
+    <string name="desc_gigahertz">Gigahertz equals 1000000000 hertz.</string>
+
     <string name="settings_title">Settings</string>
     <string name="pref_language">Language</string>
     <string name="pref_theme">Theme</string>
