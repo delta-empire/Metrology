@@ -27,6 +27,20 @@
         <item>Энергия</item>
         <item>Частота</item>
         <item>Сила</item>
+        <item>Объём</item>
+        <item>Площадь</item>
+        <item>Скорость</item>
+        <item>Ускорение</item>
+        <item>Плотность</item>
+        <item>Угловая мера</item>
+        <item>Скорость вращения</item>
+        <item>Момент силы</item>
+        <item>Расход (объёмный)</item>
+        <item>Расход (массовый)</item>
+        <item>Ионизирующее излучение</item>
+        <item>Радиоактивность</item>
+        <item>Децибелы</item>
+        <item>Вязкость</item>
     </string-array>
 
     <string name="desc_kelvin">Кельвин — единица термодинамической температуры СИ.</string>
