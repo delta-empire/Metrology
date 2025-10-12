@@ -55,6 +55,10 @@
     <string name="desc_microampere">Микроампер — одна миллионная часть ампера.</string>
     <string name="desc_milliampere">Миллиампер — одна тысячная часть ампера.</string>
     <string name="desc_kiloampere">Килоампер — тысяча ампер.</string>
+    <string name="desc_mole">Моль — единица количества вещества СИ.</string>
+    <string name="desc_millimole">Миллимоль — одна тысячная доля моля.</string>
+    <string name="desc_kilomole">Киломоль — тысяча молей.</string>
+    <string name="desc_megamole">Мегамоль — миллион молей.</string>
     <string name="warn_below_zero_kelvin">Температура не может быть ниже абсолютного нуля</string>
     <string name="desc_second">Секунда — единица времени СИ.</string>
     <string name="desc_microsecond">Микросекунда — одна миллионная доля секунды.</string>

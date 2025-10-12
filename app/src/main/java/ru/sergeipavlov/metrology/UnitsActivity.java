@@ -44,6 +44,8 @@ public class UnitsActivity extends BaseActivity {
                 activity = CurrentActivity.class;
             } else if (i == 4) {
                 activity = TemperatureActivity.class;
+            } else if (i == 5) {
+                activity = SubstanceActivity.class;
             }
             items.add(new UnitsAdapter.Item(false, baseUnits[i], activity));
         }

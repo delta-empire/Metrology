@@ -39,6 +39,10 @@
     <string name="desc_microampere">Microampere is one millionth of an ampere.</string>
     <string name="desc_milliampere">Milliampere is one thousandth of an ampere.</string>
     <string name="desc_kiloampere">Kiloampere is a thousand amperes.</string>
+    <string name="desc_mole">Mole is the SI unit of amount of substance.</string>
+    <string name="desc_millimole">Millimole is one thousandth of a mole.</string>
+    <string name="desc_kilomole">Kilomole equals one thousand moles.</string>
+    <string name="desc_megamole">Megamole equals one million moles.</string>
     <string name="warn_below_zero_kelvin">Temperature cannot be below absolute zero</string>
     <string name="desc_second">The second is the SI unit of time.</string>
     <string name="desc_microsecond">Microsecond is one millionth of a second.</string>
