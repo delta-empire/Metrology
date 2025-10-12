@@ -203,4 +203,105 @@
     <string name="pressure_us_uk_title">США и Британия</string>
     <string name="pressure_us_title">США</string>
     <string name="pressure_uk_title">Британия</string>
+
+    <!-- Force conversion -->
+    <string name="force_other_title">Производные и внесистемные</string>
+    <string name="force_technical_title">Техническая система единиц</string>
+    <string name="force_cgs_title">Система единиц СГС</string>
+    <string name="force_us_uk_title">США и Британия</string>
+    <string name="desc_newton_unit">Ньютон — единица силы СИ.</string>
+    <string name="desc_meganewton">Меганьютон — 1 000 000 ньютонов.</string>
+    <string name="desc_kilonewton">Килоньютон — 1 000 ньютонов.</string>
+    <string name="desc_millinewton">Миллиньютон — одна тысячная ньютона.</string>
+    <string name="desc_micronewton">Микроньютон — одна миллионная ньютона.</string>
+    <string name="desc_tonne_force">Тонна-сила (Тс) — 9 806,65 Н.</string>
+    <string name="desc_kilopond">Килопонд — равен килограмм-силе (9,80665 Н).</string>
+    <string name="desc_kilogram_force">Килограмм-сила (кгс) — сила, создаваемая массой 1 кг при g = 9,80665 м/с².</string>
+    <string name="desc_gram_force">Грамм-сила (гс) — 0,00980665 Н.</string>
+    <string name="desc_centner_force">Центнер-сила (Rc, цс) — 100 кгс (≈980,665 Н).</string>
+    <string name="desc_milligram_force">Миллиграмм-сила (mGf, мгс) — 9,80665×10⁻⁶ Н.</string>
+    <string name="desc_dyne">Дин (дина) — 10⁻⁵ Н.</string>
+    <string name="desc_ton_force_us">Тонна-сила (Tf) — 2000 фунт-сил (≈8 896,44 Н).</string>
+    <string name="desc_pound_force">Фунт-сила (lbf) — ≈4,44822 Н.</string>
+    <string name="desc_ounce_force">Унция-сила (ozf) — 1/16 фунт-силы (≈0,278014 Н).</string>
+    <string name="desc_poundal">Паундаль (pdl) — ≈0,138255 Н.</string>
+
+    <!-- Volume conversion -->
+    <string name="volume_other_title">Производные и внесистемные</string>
+    <string name="volume_us_british_title">США и Британия</string>
+    <string name="volume_us_liquid_title">США (жидкости)</string>
+    <string name="volume_us_oil_title">США (нефть)</string>
+    <string name="volume_us_dry_title">США (сухие вещества)</string>
+    <string name="volume_uk_title">Британия</string>
+    <string name="desc_cubic_meter">Кубический метр — единица объёма СИ.</string>
+    <string name="desc_cubic_decimeter">Кубический дециметр — 1 литр (10⁻³ м³).</string>
+    <string name="desc_cubic_centimeter">Кубический сантиметр — 10⁻⁶ м³.</string>
+    <string name="desc_cubic_millimeter">Кубический миллиметр — 10⁻⁹ м³.</string>
+    <string name="desc_hectoliter">Гектолитр (Гл) — 0,1 м³.</string>
+    <string name="desc_decaliter">Декалитр (дал) — 0,01 м³.</string>
+    <string name="desc_liter">Литр — 0,001 м³.</string>
+    <string name="desc_deciliter">Децилитр — 10⁻⁴ м³.</string>
+    <string name="desc_centiliter">Сантилитр — 10⁻⁵ м³.</string>
+    <string name="desc_milliliter">Миллилитр — 10⁻⁶ м³.</string>
+    <string name="desc_microliter">Микролитр — 10⁻⁹ м³.</string>
+    <string name="desc_cubic_yard">Кубический ярд — ≈0,7645549 м³.</string>
+    <string name="desc_cubic_foot">Кубический фут — ≈0,02831685 м³.</string>
+    <string name="desc_cubic_inch">Кубический дюйм — ≈1,6387×10⁻⁵ м³.</string>
+    <string name="desc_acre_foot">Акро-фут — ≈1233,48 м³.</string>
+    <string name="desc_us_liquid_barrel">Американский жидкостный баррель — ≈0,11924 м³.</string>
+    <string name="desc_us_liquid_gallon">Американский жидкостный галлон — ≈0,00378541 м³.</string>
+    <string name="desc_us_liquid_quart">Американская жидкостная кварта — ≈0,000946353 м³.</string>
+    <string name="desc_us_liquid_pint">Американская жидкостная пинта — ≈0,000473176 м³.</string>
+    <string name="desc_us_fluid_ounce">Американская жидкостная унция — ≈2,95735×10⁻⁵ м³.</string>
+    <string name="desc_us_fluid_dram">Американский жидкостный драхм — ≈3,69669×10⁻⁶ м³.</string>
+    <string name="desc_us_minim">Американская минима — ≈6,16115×10⁻⁸ м³.</string>
+    <string name="desc_us_oil_barrel">Американский нефтяной баррель — ≈0,158987 м³.</string>
+    <string name="desc_us_dry_barrel">Американский сухой баррель — ≈0,115627 м³.</string>
+    <string name="desc_us_bushel">Американский бушель (ровный) — ≈0,0352391 м³.</string>
+    <string name="desc_us_peck">Американский пек — 1/4 бушеля (≈0,00880977 м³).</string>
+    <string name="desc_us_dry_gallon">Американский сухой галлон — ≈0,00440488 м³.</string>
+    <string name="desc_us_dry_quart">Американская сухая кварта — ≈0,00110122 м³.</string>
+    <string name="desc_us_dry_pint">Американская сухая пинта — ≈0,00055061 м³.</string>
+    <string name="desc_uk_barrel">Британский баррель — ≈0,163659 м³.</string>
+    <string name="desc_uk_bushel">Британский бушель — ≈0,0363687 м³.</string>
+    <string name="desc_uk_peck">Британский пек — 1/4 бушеля (≈0,00909218 м³).</string>
+    <string name="desc_uk_gallon">Британский галлон — ≈0,00454609 м³.</string>
+    <string name="desc_uk_quart">Британская кварта — ≈0,00113652 м³.</string>
+    <string name="desc_uk_pint">Британская пинта — ≈0,000568261 м³.</string>
+    <string name="desc_uk_fluid_ounce">Британская жидкостная унция — ≈2,8413×10⁻⁵ м³.</string>
+
+    <!-- Area conversion -->
+    <string name="area_other_title">Производные и внесистемные</string>
+    <string name="area_us_uk_title">США и Британия</string>
+    <string name="desc_square_meter">Квадратный метр — единица площади СИ.</string>
+    <string name="desc_square_kilometer">Квадратный километр — 10⁶ м².</string>
+    <string name="desc_hectare">Гектар — 10⁴ м².</string>
+    <string name="desc_are">Ар — 100 м².</string>
+    <string name="desc_square_decimeter">Квадратный дециметр — 0,01 м².</string>
+    <string name="desc_square_centimeter">Квадратный сантиметр — 0,0001 м².</string>
+    <string name="desc_square_millimeter">Квадратный миллиметр — 10⁻⁶ м².</string>
+    <string name="desc_township">Тауншип — 36 квадратных миль (≈93 239 680 м²).</string>
+    <string name="desc_square_mile">Квадратная миля — ≈2 589 988 м².</string>
+    <string name="desc_homestead">Гомстед — 160 акров (≈647 497 м²).</string>
+    <string name="desc_acre">Акр — ≈4 046,86 м².</string>
+    <string name="desc_rood">Руд — 1/4 акра (≈1 011,71 м²).</string>
+    <string name="desc_square_rod">Квадратный род (перч) — ≈25,2929 м².</string>
+    <string name="desc_square_yard">Квадратный ярд — ≈0,836127 м².</string>
+    <string name="desc_square_foot">Квадратный фут — ≈0,092903 м².</string>
+    <string name="desc_square_inch">Квадратный дюйм — ≈6,4516×10⁻⁴ м².</string>
+
+    <!-- Speed conversion -->
+    <string name="speed_other_title">Производные и внесистемные</string>
+    <string name="speed_us_uk_title">США и Британия</string>
+    <string name="speed_maritime_title">Международные и морские единицы</string>
+    <string name="desc_meter_per_second">Метр в секунду — единица скорости СИ.</string>
+    <string name="desc_kilometer_per_second">Километр в секунду — 1000 м/с.</string>
+    <string name="desc_kilometer_per_hour">Километр в час — ≈0,27778 м/с.</string>
+    <string name="desc_meter_per_minute">Метр в минуту — ≈0,016667 м/с.</string>
+    <string name="desc_mile_per_second">Миля в секунду — ≈1609,34 м/с.</string>
+    <string name="desc_mile_per_hour">Миля в час — ≈0,44704 м/с.</string>
+    <string name="desc_foot_per_second">Фут в секунду — ≈0,3048 м/с.</string>
+    <string name="desc_foot_per_minute">Фут в минуту — ≈0,00508 м/с.</string>
+    <string name="desc_knot">Узел — ≈0,514444 м/с.</string>
+    <string name="desc_nautical_mile_per_hour">Морская миля в час — ≈0,514444 м/с.</string>
 </resources>
