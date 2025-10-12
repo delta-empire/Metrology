@@ -40,6 +40,10 @@
     <string name="desc_microampere">Мікраампер — адна мільённая частка ампера.</string>
     <string name="desc_milliampere">Міліампер — адна тысячная частка ампера.</string>
     <string name="desc_kiloampere">Кілаампер — тысяча ампер.</string>
+    <string name="desc_mole">Моль — адзінка колькасці рэчыва СІ.</string>
+    <string name="desc_millimole">Мілімоль — адна тысячная доля моля.</string>
+    <string name="desc_kilomole">Кіламоль — тысяча моляў.</string>
+    <string name="desc_megamole">Мегамоль — адзін мільён моляў.</string>
     <string name="warn_below_zero_kelvin">Тэмпература не можа быць ніжэй за абсалютны нуль</string>
     <string name="desc_second">Секунда — адзінка часу СІ.</string>
     <string name="desc_microsecond">Мікрасекунда — адна мільённая доля секунды.</string>
