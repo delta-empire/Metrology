@@ -26,6 +26,9 @@
         <item>Энергія</item>
         <item>Частата</item>
         <item>Сіла</item>
+        <item>Аб'ём</item>
+        <item>Плошча</item>
+        <item>Хуткасць</item>
     </string-array>
 
     <string name="desc_kelvin">Кельвін — адзінка тэрмадынамічнай тэмпературы СІ.</string>
@@ -96,4 +99,105 @@
     <string name="theme_dark">Цёмная</string>
     <string name="theme_system">Сістэмная</string>
     <string name="reset_defaults">Скінуць да стандартных</string>
+
+    <!-- Force conversion -->
+    <string name="force_other_title">Пахадныя і пазасістэмныя</string>
+    <string name="force_technical_title">Тэхнічная сістэма адзінак</string>
+    <string name="force_cgs_title">Сістэма СГС</string>
+    <string name="force_us_uk_title">ЗША і Брытанія</string>
+    <string name="desc_newton_unit">Ньютан — адзінка сілы СІ.</string>
+    <string name="desc_meganewton">Меганьютан — 1 000 000 ньютанаў.</string>
+    <string name="desc_kilonewton">Кілоньютан — 1 000 ньютанаў.</string>
+    <string name="desc_millinewton">Міліньютан — адна тысячная ньютана.</string>
+    <string name="desc_micronewton">Мікра ньютан — адна мільённая ньютана.</string>
+    <string name="desc_tonne_force">Тона-сіла (Тс) — 9 806,65 Н.</string>
+    <string name="desc_kilopond">Кілапон — роўны кілаграм-сіле (9,80665 Н).</string>
+    <string name="desc_kilogram_force">Кілаграм-сіла (кгс) — сіла, створаная масай 1 кг пры g = 9,80665 м/с².</string>
+    <string name="desc_gram_force">Грам-сіла (гс) — 0,00980665 Н.</string>
+    <string name="desc_centner_force">Цэнтнер-сіла (Rc, цс) — 100 кгс (≈980,665 Н).</string>
+    <string name="desc_milligram_force">Міліграм-сіла (mGf, мгс) — 9,80665×10⁻⁶ Н.</string>
+    <string name="desc_dyne">Дын (діна) — 10⁻⁵ Н.</string>
+    <string name="desc_ton_force_us">Тона-сіла (Tf) — 2000 фунт-сіл (≈8 896,44 Н).</string>
+    <string name="desc_pound_force">Фунт-сіла (lbf) — ≈4,44822 Н.</string>
+    <string name="desc_ounce_force">Унцыя-сіла (ozf) — 1/16 фунт-сілы (≈0,278014 Н).</string>
+    <string name="desc_poundal">Паундаль (pdl) — ≈0,138255 Н.</string>
+
+    <!-- Volume conversion -->
+    <string name="volume_other_title">Пахадныя і пазасістэмныя</string>
+    <string name="volume_us_british_title">ЗША і Брытанія</string>
+    <string name="volume_us_liquid_title">ЗША (вадкасці)</string>
+    <string name="volume_us_oil_title">ЗША (нафта)</string>
+    <string name="volume_us_dry_title">ЗША (сухія рэчывы)</string>
+    <string name="volume_uk_title">Брытанія</string>
+    <string name="desc_cubic_meter">Кубічны метр — адзінка аб'ёму СІ.</string>
+    <string name="desc_cubic_decimeter">Кубічны дэцыметр — 1 літр (10⁻³ м³).</string>
+    <string name="desc_cubic_centimeter">Кубічны сантыметр — 10⁻⁶ м³.</string>
+    <string name="desc_cubic_millimeter">Кубічны міліметр — 10⁻⁹ м³.</string>
+    <string name="desc_hectoliter">Гекталітр (Гл) — 0,1 м³.</string>
+    <string name="desc_decaliter">Дэкалітр (дал) — 0,01 м³.</string>
+    <string name="desc_liter">Літр — 0,001 м³.</string>
+    <string name="desc_deciliter">Дэцылітер — 10⁻⁴ м³.</string>
+    <string name="desc_centiliter">Сантылітр — 10⁻⁵ м³.</string>
+    <string name="desc_milliliter">Мілілітр — 10⁻⁶ м³.</string>
+    <string name="desc_microliter">Мікралітр — 10⁻⁹ м³.</string>
+    <string name="desc_cubic_yard">Кубічны ярд — ≈0,7645549 м³.</string>
+    <string name="desc_cubic_foot">Кубічны фут — ≈0,02831685 м³.</string>
+    <string name="desc_cubic_inch">Кубічны дзюйм — ≈1,6387×10⁻⁵ м³.</string>
+    <string name="desc_acre_foot">Акр-фут — ≈1233,48 м³.</string>
+    <string name="desc_us_liquid_barrel">Амерыканскі вадкасны барэль — ≈0,11924 м³.</string>
+    <string name="desc_us_liquid_gallon">Амерыканскі вадкасны галон — ≈0,00378541 м³.</string>
+    <string name="desc_us_liquid_quart">Амерыканская вадкасная кварта — ≈0,000946353 м³.</string>
+    <string name="desc_us_liquid_pint">Амерыканская вадкасная пінта — ≈0,000473176 м³.</string>
+    <string name="desc_us_fluid_ounce">Амерыканская вадкасная унцыя — ≈2,95735×10⁻⁵ м³.</string>
+    <string name="desc_us_fluid_dram">Амерыканскі вадкасны драм — ≈3,69669×10⁻⁶ м³.</string>
+    <string name="desc_us_minim">Амерыканская мінім — ≈6,16115×10⁻⁸ м³.</string>
+    <string name="desc_us_oil_barrel">Амерыканскі нафтапрадуктавы барэль — ≈0,158987 м³.</string>
+    <string name="desc_us_dry_barrel">Амерыканскі сухі барэль — ≈0,115627 м³.</string>
+    <string name="desc_us_bushel">Амерыканскі бушэль (роўны) — ≈0,0352391 м³.</string>
+    <string name="desc_us_peck">Амерыканскі пек — 1/4 бушэля (≈0,00880977 м³).</string>
+    <string name="desc_us_dry_gallon">Амерыканскі сухі галон — ≈0,00440488 м³.</string>
+    <string name="desc_us_dry_quart">Амерыканская сухая кварта — ≈0,00110122 м³.</string>
+    <string name="desc_us_dry_pint">Амерыканская сухая пінта — ≈0,00055061 м³.</string>
+    <string name="desc_uk_barrel">Брытанскі барэль — ≈0,163659 м³.</string>
+    <string name="desc_uk_bushel">Брытанскі бушэль — ≈0,0363687 м³.</string>
+    <string name="desc_uk_peck">Брытанскі пек — 1/4 бушэля (≈0,00909218 м³).</string>
+    <string name="desc_uk_gallon">Брытанскі галон — ≈0,00454609 м³.</string>
+    <string name="desc_uk_quart">Брытанская кварта — ≈0,00113652 м³.</string>
+    <string name="desc_uk_pint">Брытанская пінта — ≈0,000568261 м³.</string>
+    <string name="desc_uk_fluid_ounce">Брытанская вадкасная унцыя — ≈2,8413×10⁻⁵ м³.</string>
+
+    <!-- Area conversion -->
+    <string name="area_other_title">Пахадныя і пазасістэмныя</string>
+    <string name="area_us_uk_title">ЗША і Брытанія</string>
+    <string name="desc_square_meter">Квадратны метр — адзінка плошчы СІ.</string>
+    <string name="desc_square_kilometer">Квадратны кіламетр — 10⁶ м².</string>
+    <string name="desc_hectare">Гектар — 10⁴ м².</string>
+    <string name="desc_are">Ар — 100 м².</string>
+    <string name="desc_square_decimeter">Квадратны дэцыметр — 0,01 м².</string>
+    <string name="desc_square_centimeter">Квадратны сантыметр — 0,0001 м².</string>
+    <string name="desc_square_millimeter">Квадратны міліметр — 10⁻⁶ м².</string>
+    <string name="desc_township">Тауншып — 36 квадратных міль (≈93 239 680 м²).</string>
+    <string name="desc_square_mile">Квадратная міля — ≈2 589 988 м².</string>
+    <string name="desc_homestead">Гомстэд — 160 акраў (≈647 497 м²).</string>
+    <string name="desc_acre">Акр — ≈4 046,86 м².</string>
+    <string name="desc_rood">Руд — 1/4 акра (≈1 011,71 м²).</string>
+    <string name="desc_square_rod">Квадратны род (перч) — ≈25,2929 м².</string>
+    <string name="desc_square_yard">Квадратны ярд — ≈0,836127 м².</string>
+    <string name="desc_square_foot">Квадратны фут — ≈0,092903 м².</string>
+    <string name="desc_square_inch">Квадратны дзюйм — ≈6,4516×10⁻⁴ м².</string>
+
+    <!-- Speed conversion -->
+    <string name="speed_other_title">Пахадныя і пазасістэмныя</string>
+    <string name="speed_us_uk_title">ЗША і Брытанія</string>
+    <string name="speed_maritime_title">Міжнародныя і марскія адзінкі</string>
+    <string name="desc_meter_per_second">Метр у секунду — адзінка хуткасці СІ.</string>
+    <string name="desc_kilometer_per_second">Кіламетр у секунду — 1000 м/с.</string>
+    <string name="desc_kilometer_per_hour">Кіламетр у гадзіну — ≈0,27778 м/с.</string>
+    <string name="desc_meter_per_minute">Метр у хвіліну — ≈0,016667 м/с.</string>
+    <string name="desc_mile_per_second">Міля ў секунду — ≈1609,34 м/с.</string>
+    <string name="desc_mile_per_hour">Міля ў гадзіну — ≈0,44704 м/с.</string>
+    <string name="desc_foot_per_second">Фут у секунду — ≈0,3048 м/с.</string>
+    <string name="desc_foot_per_minute">Фут у хвіліну — ≈0,00508 м/с.</string>
+    <string name="desc_knot">Вузел — ≈0,514444 м/с.</string>
+    <string name="desc_nautical_mile_per_hour">Марская міля ў гадзіну — ≈0,514444 м/с.</string>
 </resources>

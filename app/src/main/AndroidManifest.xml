@@ -57,6 +57,18 @@
             android:name=".TimeActivity"
             android:exported="false" />
         <activity
+            android:name=".ForceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolumeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AreaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpeedActivity"
+            android:exported="false" />
+        <activity
             android:name=".SettingsActivity"
             android:exported="false" />
         <activity
