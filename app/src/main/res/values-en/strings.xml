@@ -95,4 +95,23 @@
     <string name="theme_dark">Dark</string>
     <string name="theme_system">System</string>
     <string name="reset_defaults">Reset to default</string>
+    <string name="energy_other_title">Derived and non-SI</string>
+    <string name="energy_us_uk_title">US and Britain</string>
+    <string name="desc_joule">Joule is the SI unit of energy.</string>
+    <string name="desc_megajoule">Megajoule equals 1,000,000 joules.</string>
+    <string name="desc_kilojoule">Kilojoule equals 1,000 joules.</string>
+    <string name="desc_megacalorie">Megacalorie equals 1,000,000 calories (≈4.1868×10⁶ J).</string>
+    <string name="desc_kilocalorie">Kilocalorie equals 1,000 calories (≈4,186.8 J).</string>
+    <string name="desc_calorie">Calorie is ≈4.1868 J.</string>
+    <string name="desc_kgf_meter">Kilogram-force meter is ≈9.80665 J.</string>
+    <string name="desc_kilowatt_hour">Kilowatt-hour is 3,600,000 J.</string>
+    <string name="desc_watt_hour">Watt-hour is 3,600 J.</string>
+    <string name="desc_watt_second">Watt-second equals one joule.</string>
+    <string name="desc_erg">Erg is 10⁻⁷ J.</string>
+    <string name="desc_tm_eu">Therm (EU) is ≈1.05505585257348×10⁸ J.</string>
+    <string name="desc_tm_us">Therm (US) is 105,480,400 J.</string>
+    <string name="desc_tm_uk">Therm (UK) is ≈1.05505585257348×10⁸ J.</string>
+    <string name="desc_btu">BTU is ≈1,055.06 J.</string>
+    <string name="desc_mmbtu">MMBTU equals 1,000,000 BTU.</string>
+    <string name="desc_ft_lbf">Foot-pound-force is ≈1.35582 J.</string>
 </resources>

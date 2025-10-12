@@ -55,6 +55,8 @@ public class UnitsActivity extends BaseActivity {
                 activity = PressureActivity.class;
             } else if (i == 1) {
                 activity = PowerActivity.class;
+            } else if (i == 2) {
+                activity = EnergyActivity.class;
             } else if (i == 3) {
                 activity = FrequencyActivity.class;
             }
