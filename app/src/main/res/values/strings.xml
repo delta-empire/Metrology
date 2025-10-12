@@ -27,6 +27,20 @@
         <item>Энергия</item>
         <item>Частота</item>
         <item>Сила</item>
+        <item>Объём</item>
+        <item>Площадь</item>
+        <item>Скорость</item>
+        <item>Ускорение</item>
+        <item>Плотность</item>
+        <item>Угловая мера</item>
+        <item>Скорость вращения</item>
+        <item>Момент силы</item>
+        <item>Расход (объёмный)</item>
+        <item>Расход (массовый)</item>
+        <item>Ионизирующее излучение</item>
+        <item>Радиоактивность</item>
+        <item>Децибелы</item>
+        <item>Вязкость</item>
     </string-array>
 
     <string name="desc_kelvin">Кельвин — единица термодинамической температуры СИ.</string>
@@ -102,6 +116,54 @@
     <string name="label_signal">Унифицированный сигнал</string>
     <string name="label_start">Начало</string>
     <string name="label_end">Конец</string>
+
+    <!-- Power conversion -->
+    <string name="power_other_title">Производные и внесистемные</string>
+    <string name="power_us_uk_title">США и Британия</string>
+    <string name="desc_watt">Ватт — единица мощности СИ.</string>
+    <string name="desc_megawatt">Мегаватт — равен 1 000 000 ватт.</string>
+    <string name="desc_kilowatt">Киловатт — равен 1 000 ватт.</string>
+    <string name="desc_volt_ampere">Вольт-ампер — единица полной электрической мощности; 1 ВА = 1 Вт при коэффициенте мощности 1.</string>
+    <string name="desc_gcal_per_second">Гигакалория в секунду — 1 Гкал/с ≈ 4,1868×10⁹ Вт.</string>
+    <string name="desc_kcal_per_second">Килокалория в секунду — 1 ккал/с ≈ 4 186,8 Вт.</string>
+    <string name="desc_cal_per_second">Калория в секунду — 1 кал/с ≈ 4,1868 Вт.</string>
+    <string name="desc_gcal_per_hour">Гигакалория в час — 1 Гкал/ч ≈ 1,163×10⁶ Вт.</string>
+    <string name="desc_kcal_per_hour">Килокалория в час — 1 ккал/ч ≈ 1,163 Вт.</string>
+    <string name="desc_cal_per_hour">Калория в час — 1 кал/ч ≈ 0,001163 Вт.</string>
+    <string name="desc_hp_s">Лошадиная сила (паровая) — 1 hp(S) ≈ 9 810,55 Вт.</string>
+    <string name="desc_hp_e">Лошадиная сила (электрическая) — 1 hp(E) = 746 Вт.</string>
+    <string name="desc_hp_h">Лошадиная сила (гидравлическая) — 1 hp(H) ≈ 745,92 Вт.</string>
+    <string name="desc_hp_i">Лошадиная сила (международная) — 1 hp(I) ≈ 745,70 Вт.</string>
+    <string name="desc_hp_m">Лошадиная сила (метрическая) — 1 hp(M) = 735,49875 Вт.</string>
+    <string name="desc_kgf_m_per_second">Килограмм-сила метр в секунду — 1 кгс·м/с = 9,80665 Вт.</string>
+    <string name="desc_joule_per_second">Джоуль в секунду — 1 Дж/с равен 1 Вт.</string>
+    <string name="desc_joule_per_hour">Джоуль в час — 1 Дж/ч ≈ 0,0002778 Вт.</string>
+    <string name="desc_erg_per_second">Эрг в секунду — 1 эрг/с = 10⁻⁷ Вт.</string>
+    <string name="desc_rt">Тонна холода — 1 RT ≈ 3,517 кВт.</string>
+    <string name="desc_usrt">Американская тонна холода — 1 USRT = 12 000 BTU/ч ≈ 3,517 кВт.</string>
+    <string name="desc_btu_per_second">BTU в секунду — 1 BTU/с ≈ 1 055,06 Вт.</string>
+    <string name="desc_btu_per_minute">BTU в минуту — 1 BTU/мин ≈ 17,58 Вт.</string>
+    <string name="desc_btu_per_hour">BTU в час — 1 BTU/ч ≈ 0,29307 Вт.</string>
+    <string name="desc_ft_lbf_per_second">Фут-фунт-сила в секунду — 1 ft·lbf/с ≈ 1,35582 Вт.</string>
+    <string name="energy_other_title">Производные и внесистемные</string>
+    <string name="energy_us_uk_title">США и Британия</string>
+    <string name="desc_joule">Джоуль — единица измерения энергии СИ.</string>
+    <string name="desc_megajoule">Мегаджоуль — 1 000 000 джоулей.</string>
+    <string name="desc_kilojoule">Килоджоуль — 1 000 джоулей.</string>
+    <string name="desc_megacalorie">Мегакалория — 1 000 000 калорий (≈4,1868×10⁶ Дж).</string>
+    <string name="desc_kilocalorie">Килокалория — 1 000 калорий (≈4 186,8 Дж).</string>
+    <string name="desc_calorie">Калория — ≈4,1868 Дж.</string>
+    <string name="desc_kgf_meter">Килограмм-сила метр — ≈9,80665 Дж.</string>
+    <string name="desc_kilowatt_hour">Киловатт-час — 3 600 000 Дж.</string>
+    <string name="desc_watt_hour">Ватт-час — 3 600 Дж.</string>
+    <string name="desc_watt_second">Ватт-секунда равна одному джоулю.</string>
+    <string name="desc_erg">Эрг — 10⁻⁷ Дж.</string>
+    <string name="desc_tm_eu">Терм (ЕС) — ≈1,05505585257348×10⁸ Дж.</string>
+    <string name="desc_tm_us">Терм (США) — 105 480 400 Дж.</string>
+    <string name="desc_tm_uk">Терм (Великобритания) — ≈1,05505585257348×10⁸ Дж.</string>
+    <string name="desc_btu">BTU — ≈1 055,06 Дж.</string>
+    <string name="desc_mmbtu">MMBTU — 1 000 000 BTU.</string>
+    <string name="desc_ft_lbf">Фут-фунт-сила — ≈1,35582 Дж.</string>
     <!-- Pressure conversion -->
     <string name="desc_pascal">Паскаль — единица давления СИ.</string>
     <string name="desc_kgf_cm2">Килограмм-сила на квадратный сантиметр.</string>
