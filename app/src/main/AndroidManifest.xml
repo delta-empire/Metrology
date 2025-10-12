@@ -33,6 +33,9 @@
             android:name=".PowerActivity"
             android:exported="false" />
         <activity
+            android:name=".EnergyActivity"
+            android:exported="false" />
+        <activity
             android:name=".PressureActivity"
             android:exported="false" />
         <activity
