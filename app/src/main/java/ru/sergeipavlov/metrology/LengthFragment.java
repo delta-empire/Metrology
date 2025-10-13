@@ -193,7 +193,7 @@ public class LengthFragment extends Fragment {
     }
 
     private String format(double value, int precision) {
-        BigDecimal bd = new BigDecimal(value);
+        BigDecimal bd = BigDecimal.valueOf(value);
         bd = bd.setScale(precision, RoundingMode.HALF_UP);
         return bd.toPlainString();
     }
