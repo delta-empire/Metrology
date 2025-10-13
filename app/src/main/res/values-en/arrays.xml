@@ -1,0 +1,30 @@
+<resources>
+    <string-array name="main_menu_items">
+        <item>Units of measurement</item>
+        <item>Scale-signal</item>
+        <item>Temperature sensors</item>
+        <item>Constriction devices</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="base_units">
+        <item>Time</item>
+        <item>Length</item>
+        <item>Mass</item>
+        <item>Electric current</item>
+        <item>Temperature</item>
+        <item>Amount of substance</item>
+        <item>Luminous intensity</item>
+    </string-array>
+
+    <string-array name="derived_units">
+        <item>Pressure</item>
+        <item>Power</item>
+        <item>Energy</item>
+        <item>Frequency</item>
+        <item>Force</item>
+        <item>Volume</item>
+        <item>Area</item>
+        <item>Speed</item>
+    </string-array>
+</resources>

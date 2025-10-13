@@ -1,35 +1,6 @@
 <resources>
-    <string-array name="main_menu_items">
-        <item>Units of measurement</item>
-        <item>Scale-signal</item>
-        <item>Temperature sensors</item>
-        <item>Constriction devices</item>
-        <item>Settings</item>
-    </string-array>
-
     <string name="base_units_title">Base SI units</string>
-    <string-array name="base_units">
-        <item>Time</item>
-        <item>Length</item>
-        <item>Mass</item>
-        <item>Electric current</item>
-        <item>Temperature</item>
-        <item>Amount of substance</item>
-        <item>Luminous intensity</item>
-    </string-array>
-
     <string name="derived_units_title">Derived SI units</string>
-    <string-array name="derived_units">
-        <item>Pressure</item>
-        <item>Power</item>
-        <item>Energy</item>
-        <item>Frequency</item>
-        <item>Force</item>
-        <item>Volume</item>
-        <item>Area</item>
-        <item>Speed</item>
-    </string-array>
-
     <string name="desc_kelvin">The kelvin is the SI unit of thermodynamic temperature.</string>
     <string name="desc_celsius">Degree Celsius is a unit of temperature on the Celsius scale.</string>
     <string name="desc_fahrenheit">Degree Fahrenheit is a unit of temperature on the Fahrenheit scale.</string>

@@ -29,4 +29,44 @@
         <item>Корнеизвлекающая шкала</item>
         <item>Корнеизвлекающая, убывающая</item>
     </string-array>
+
+    <string-array name="main_menu_items">
+        <item>Единицы измерения</item>
+        <item>Шкала-сигнал</item>
+        <item>Датчики температуры</item>
+        <item>Сужающие устройства</item>
+        <item>Настройки</item>
+    </string-array>
+
+    <string-array name="base_units">
+        <item>Время</item>
+        <item>Длина</item>
+        <item>Масса</item>
+        <item>Сила тока</item>
+        <item>Температура</item>
+        <item>Количество вещества</item>
+        <item>Сила света</item>
+    </string-array>
+
+    <string-array name="derived_units">
+        <item>Давление</item>
+        <item>Мощность</item>
+        <item>Энергия</item>
+        <item>Частота</item>
+        <item>Сила</item>
+        <item>Объём</item>
+        <item>Площадь</item>
+        <item>Скорость</item>
+        <item>Ускорение</item>
+        <item>Плотность</item>
+        <item>Угловая мера</item>
+        <item>Скорость вращения</item>
+        <item>Момент силы</item>
+        <item>Расход (объёмный)</item>
+        <item>Расход (массовый)</item>
+        <item>Ионизирующее излучение</item>
+        <item>Радиоактивность</item>
+        <item>Децибелы</item>
+        <item>Вязкость</item>
+    </string-array>
 </resources>
