@@ -1,0 +1,30 @@
+<resources>
+    <string-array name="main_menu_items">
+        <item>Адзіницы вымярэння</item>
+        <item>Шкала-сігнал</item>
+        <item>Датчыкі тэмпературы</item>
+        <item>Звужальныя прылады</item>
+        <item>Налады</item>
+    </string-array>
+
+    <string-array name="base_units">
+        <item>Час</item>
+        <item>Даўжыня</item>
+        <item>Маса</item>
+        <item>Сіла току</item>
+        <item>Тэмпература</item>
+        <item>Колькасць рэчыва</item>
+        <item>Сіла святла</item>
+    </string-array>
+
+    <string-array name="derived_units">
+        <item>Ціск</item>
+        <item>Магутнасць</item>
+        <item>Энергія</item>
+        <item>Частата</item>
+        <item>Сіла</item>
+        <item>Аб'ём</item>
+        <item>Плошча</item>
+        <item>Хуткасць</item>
+    </string-array>
+</resources>
