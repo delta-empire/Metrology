@@ -44,6 +44,8 @@ public class UnitsActivity extends BaseActivity {
                 activity = CurrentActivity.class;
             } else if (i == 4) {
                 activity = TemperatureActivity.class;
+            } else if (i == 5) {
+                activity = SubstanceActivity.class;
             }
             items.add(new UnitsAdapter.Item(false, baseUnits[i], activity));
         }
@@ -59,6 +61,14 @@ public class UnitsActivity extends BaseActivity {
                 activity = EnergyActivity.class;
             } else if (i == 3) {
                 activity = FrequencyActivity.class;
+            } else if (i == 4) {
+                activity = ForceActivity.class;
+            } else if (i == 5) {
+                activity = VolumeActivity.class;
+            } else if (i == 6) {
+                activity = AreaActivity.class;
+            } else if (i == 7) {
+                activity = SpeedActivity.class;
             }
             items.add(new UnitsAdapter.Item(false, derivedUnits[i], activity));
         }

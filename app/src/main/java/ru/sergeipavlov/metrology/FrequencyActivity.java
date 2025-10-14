@@ -1,20 +1,22 @@
 package ru.sergeipavlov.metrology;
 
-import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import androidx.activity.EdgeToEdge;
-
-public class FrequencyActivity extends BaseActivity {
+public class FrequencyActivity extends SingleFragmentActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_frequency);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.frequency_container, new FrequencyFragment())
-                    .commit();
-        }
+    protected int getLayoutResId() {
+        return R.layout.activity_frequency;
+    }
+
+    @Override
+    protected int getFragmentContainerId() {
+        return R.id.frequency_container;
+    }
+
+    @NonNull
+    @Override
+    protected Fragment createFragment() {
+        return new FrequencyFragment();
     }
 }

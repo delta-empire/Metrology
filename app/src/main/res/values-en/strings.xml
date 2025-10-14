@@ -1,32 +1,8 @@
 <resources>
-    <string-array name="main_menu_items">
-        <item>Units of measurement</item>
-        <item>Scale-signal</item>
-        <item>Temperature sensors</item>
-        <item>Constriction devices</item>
-        <item>Settings</item>
-    </string-array>
+    <string name="app_name">Metrology</string>
 
     <string name="base_units_title">Base SI units</string>
-    <string-array name="base_units">
-        <item>Time</item>
-        <item>Length</item>
-        <item>Mass</item>
-        <item>Electric current</item>
-        <item>Temperature</item>
-        <item>Amount of substance</item>
-        <item>Luminous intensity</item>
-    </string-array>
-
     <string name="derived_units_title">Derived SI units</string>
-    <string-array name="derived_units">
-        <item>Pressure</item>
-        <item>Power</item>
-        <item>Energy</item>
-        <item>Frequency</item>
-        <item>Force</item>
-    </string-array>
-
     <string name="desc_kelvin">The kelvin is the SI unit of thermodynamic temperature.</string>
     <string name="desc_celsius">Degree Celsius is a unit of temperature on the Celsius scale.</string>
     <string name="desc_fahrenheit">Degree Fahrenheit is a unit of temperature on the Fahrenheit scale.</string>
@@ -39,6 +15,10 @@
     <string name="desc_microampere">Microampere is one millionth of an ampere.</string>
     <string name="desc_milliampere">Milliampere is one thousandth of an ampere.</string>
     <string name="desc_kiloampere">Kiloampere is a thousand amperes.</string>
+    <string name="desc_mole">Mole is the SI unit of amount of substance.</string>
+    <string name="desc_millimole">Millimole is one thousandth of a mole.</string>
+    <string name="desc_kilomole">Kilomole equals one thousand moles.</string>
+    <string name="desc_megamole">Megamole equals one million moles.</string>
     <string name="warn_below_zero_kelvin">Temperature cannot be below absolute zero</string>
     <string name="desc_second">The second is the SI unit of time.</string>
     <string name="desc_microsecond">Microsecond is one millionth of a second.</string>
@@ -95,6 +75,40 @@
     <string name="theme_dark">Dark</string>
     <string name="theme_system">System</string>
     <string name="reset_defaults">Reset to default</string>
+
+    <string name="label_physical">Physical quantity</string>
+    <string name="label_signal">Unified signal</string>
+    <string name="label_start">Start</string>
+    <string name="label_end">End</string>
+
+    <!-- Power conversion -->
+    <string name="power_other_title">Derived and non-SI</string>
+    <string name="power_us_uk_title">US and Britain</string>
+    <string name="desc_watt">Watt is the SI unit of power.</string>
+    <string name="desc_megawatt">Megawatt equals 1,000,000 watts.</string>
+    <string name="desc_kilowatt">Kilowatt equals 1,000 watts.</string>
+    <string name="desc_volt_ampere">Volt-ampere is the unit of apparent electric power; 1 VA = 1 W at a power factor of 1.</string>
+    <string name="desc_gcal_per_second">Gigacalorie per second — 1 Gcal/s ≈ 4.1868×10⁹ W.</string>
+    <string name="desc_kcal_per_second">Kilocalorie per second — 1 kcal/s ≈ 4,186.8 W.</string>
+    <string name="desc_cal_per_second">Calorie per second — 1 cal/s ≈ 4.1868 W.</string>
+    <string name="desc_gcal_per_hour">Gigacalorie per hour — 1 Gcal/h ≈ 1.163×10⁶ W.</string>
+    <string name="desc_kcal_per_hour">Kilocalorie per hour — 1 kcal/h ≈ 1.163 W.</string>
+    <string name="desc_cal_per_hour">Calorie per hour — 1 cal/h ≈ 0.001163 W.</string>
+    <string name="desc_hp_s">Horsepower (steam) — 1 hp(S) ≈ 9,810.55 W.</string>
+    <string name="desc_hp_e">Horsepower (electric) — 1 hp(E) = 746 W.</string>
+    <string name="desc_hp_h">Horsepower (hydraulic) — 1 hp(H) ≈ 745.92 W.</string>
+    <string name="desc_hp_i">Horsepower (international) — 1 hp(I) ≈ 745.70 W.</string>
+    <string name="desc_hp_m">Horsepower (metric) — 1 hp(M) = 735.49875 W.</string>
+    <string name="desc_kgf_m_per_second">Kilogram-force meter per second — 1 kgf·m/s = 9.80665 W.</string>
+    <string name="desc_joule_per_second">Joule per second — 1 J/s equals 1 W.</string>
+    <string name="desc_joule_per_hour">Joule per hour — 1 J/h ≈ 0.0002778 W.</string>
+    <string name="desc_erg_per_second">Erg per second — 1 erg/s = 10⁻⁷ W.</string>
+    <string name="desc_rt">Refrigeration ton — 1 RT ≈ 3.517 kW.</string>
+    <string name="desc_usrt">US refrigeration ton — 1 USRT = 12,000 BTU/h ≈ 3.517 kW.</string>
+    <string name="desc_btu_per_second">BTU per second — 1 BTU/s ≈ 1,055.06 W.</string>
+    <string name="desc_btu_per_minute">BTU per minute — 1 BTU/min ≈ 17.58 W.</string>
+    <string name="desc_btu_per_hour">BTU per hour — 1 BTU/h ≈ 0.29307 W.</string>
+    <string name="desc_ft_lbf_per_second">Foot-pound-force per second — 1 ft·lbf/s ≈ 1.35582 W.</string>
     <string name="energy_other_title">Derived and non-SI</string>
     <string name="energy_us_uk_title">US and Britain</string>
     <string name="desc_joule">Joule is the SI unit of energy.</string>
@@ -114,4 +128,140 @@
     <string name="desc_btu">BTU is ≈1,055.06 J.</string>
     <string name="desc_mmbtu">MMBTU equals 1,000,000 BTU.</string>
     <string name="desc_ft_lbf">Foot-pound-force is ≈1.35582 J.</string>
+    <!-- Pressure conversion -->
+    <string name="desc_pascal">Pascal is the SI unit of pressure.</string>
+    <string name="desc_kgf_cm2">Kilogram-force per square centimeter.</string>
+    <string name="desc_kgf_m2">Kilogram-force per square meter.</string>
+    <string name="desc_millibar">Millibar equals 100 pascals.</string>
+    <string name="desc_bar">Bar equals 100,000 pascals.</string>
+    <string name="desc_kilopascal">Kilopascal equals 1,000 pascals.</string>
+    <string name="desc_megapascal">Megapascal equals 1,000,000 pascals.</string>
+    <string name="desc_newton_per_square_meter">Newton per square meter equals a pascal.</string>
+    <string name="desc_kilonewton_per_square_meter">Kilonewton per square meter equals 1,000 pascals.</string>
+    <string name="desc_meganewton_per_square_meter">Meganewton per square meter equals 1,000,000 pascals.</string>
+    <string name="desc_newton_per_square_centimeter">Newton per square centimeter equals 10,000 pascals.</string>
+    <string name="desc_newton_per_square_millimeter">Newton per square millimeter equals 1,000,000 pascals.</string>
+    <string name="desc_atmosphere">Physical atmosphere — 101,325 pascals.</string>
+    <string name="desc_technical_atmosphere">Technical atmosphere — 98,066.5 pascals.</string>
+    <string name="desc_mm_h2o">Millimeter of water column.</string>
+    <string name="desc_cm_h2o">Centimeter of water column.</string>
+    <string name="desc_foot_h2o">Foot of water column.</string>
+    <string name="desc_mm_hg">Millimeter of mercury column.</string>
+    <string name="desc_cm_hg">Centimeter of mercury column.</string>
+    <string name="desc_foot_hg">Foot of mercury column.</string>
+    <string name="desc_ksi">Kilopound per square inch.</string>
+    <string name="desc_psi">Pound per square inch.</string>
+    <string name="desc_psf">Pound per square foot.</string>
+    <string name="desc_tsi_us">Short ton per square inch (US).</string>
+    <string name="desc_tsf_us">Short ton per square foot (US).</string>
+    <string name="desc_tsi_uk">Long ton per square inch (UK).</string>
+    <string name="desc_tsf_uk">Long ton per square foot (UK).</string>
+    <string name="pressure_other_title">Derived and non-SI</string>
+    <string name="pressure_atmosphere_title">Atmosphere</string>
+    <string name="pressure_water_title">Water column</string>
+    <string name="pressure_mercury_title">Mercury column</string>
+    <string name="pressure_us_uk_title">US and Britain</string>
+    <string name="pressure_us_title">US</string>
+    <string name="pressure_uk_title">Britain</string>
+
+    <!-- Force conversion -->
+    <string name="force_other_title">Derived and non-SI</string>
+    <string name="force_technical_title">Technical unit system</string>
+    <string name="force_cgs_title">CGS system</string>
+    <string name="force_us_uk_title">US and Britain</string>
+    <string name="desc_newton_unit">Newton is the SI unit of force.</string>
+    <string name="desc_meganewton">Meganewton equals 1,000,000 newtons.</string>
+    <string name="desc_kilonewton">Kilonewton equals 1,000 newtons.</string>
+    <string name="desc_millinewton">Millinewton is one thousandth of a newton.</string>
+    <string name="desc_micronewton">Micronewton is one millionth of a newton.</string>
+    <string name="desc_tonne_force">Tonne-force (Tc) equals 9,806.65 N.</string>
+    <string name="desc_kilopond">Kilopond equals kilogram-force (9.80665 N).</string>
+    <string name="desc_kilogram_force">Kilogram-force (kgf) is the force produced by 1 kg at g = 9.80665 m/s².</string>
+    <string name="desc_gram_force">Gram-force (gf) equals 0.00980665 N.</string>
+    <string name="desc_centner_force">Centner-force (Rc) equals 100 kgf (≈980.665 N).</string>
+    <string name="desc_milligram_force">Milligram-force (mGf) equals 9.80665×10⁻⁶ N.</string>
+    <string name="desc_dyne">Dyne equals 10⁻⁵ N.</string>
+    <string name="desc_ton_force_us">Ton-force (Tf) equals 2000 pound-force (≈8,896.44 N).</string>
+    <string name="desc_pound_force">Pound-force (lbf) ≈ 4.44822 N.</string>
+    <string name="desc_ounce_force">Ounce-force (ozf) is 1/16 of a pound-force (≈0.278014 N).</string>
+    <string name="desc_poundal">Poundal (pdl) ≈ 0.138255 N.</string>
+
+    <!-- Volume conversion -->
+    <string name="volume_other_title">Derived and non-SI</string>
+    <string name="volume_us_british_title">US and Britain</string>
+    <string name="volume_us_liquid_title">US (liquids)</string>
+    <string name="volume_us_oil_title">US (oil)</string>
+    <string name="volume_us_dry_title">US (dry goods)</string>
+    <string name="volume_uk_title">Britain</string>
+    <string name="desc_cubic_meter">Cubic meter is the SI unit of volume.</string>
+    <string name="desc_cubic_decimeter">Cubic decimeter equals one liter (10⁻³ m³).</string>
+    <string name="desc_cubic_centimeter">Cubic centimeter equals 10⁻⁶ m³.</string>
+    <string name="desc_cubic_millimeter">Cubic millimeter equals 10⁻⁹ m³.</string>
+    <string name="desc_hectoliter">Hectoliter (hl) equals 0.1 m³.</string>
+    <string name="desc_decaliter">Decaliter (dal) equals 0.01 m³.</string>
+    <string name="desc_liter">Liter equals 0.001 m³.</string>
+    <string name="desc_deciliter">Deciliter equals 10⁻⁴ m³.</string>
+    <string name="desc_centiliter">Centiliter equals 10⁻⁵ m³.</string>
+    <string name="desc_milliliter">Milliliter equals 10⁻⁶ m³.</string>
+    <string name="desc_microliter">Microliter equals 10⁻⁹ m³.</string>
+    <string name="desc_cubic_yard">Cubic yard ≈ 0.7645549 m³.</string>
+    <string name="desc_cubic_foot">Cubic foot ≈ 0.02831685 m³.</string>
+    <string name="desc_cubic_inch">Cubic inch ≈ 1.6387×10⁻⁵ m³.</string>
+    <string name="desc_acre_foot">Acre-foot ≈ 1,233.48 m³.</string>
+    <string name="desc_us_liquid_barrel">US liquid barrel ≈ 0.11924 m³.</string>
+    <string name="desc_us_liquid_gallon">US liquid gallon ≈ 0.00378541 m³.</string>
+    <string name="desc_us_liquid_quart">US liquid quart ≈ 0.000946353 m³.</string>
+    <string name="desc_us_liquid_pint">US liquid pint ≈ 0.000473176 m³.</string>
+    <string name="desc_us_fluid_ounce">US fluid ounce ≈ 2.95735×10⁻⁵ m³.</string>
+    <string name="desc_us_fluid_dram">US fluid dram ≈ 3.69669×10⁻⁶ m³.</string>
+    <string name="desc_us_minim">US minim ≈ 6.16115×10⁻⁸ m³.</string>
+    <string name="desc_us_oil_barrel">US oil barrel ≈ 0.158987 m³.</string>
+    <string name="desc_us_dry_barrel">US dry barrel ≈ 0.115627 m³.</string>
+    <string name="desc_us_bushel">US bushel (level) ≈ 0.0352391 m³.</string>
+    <string name="desc_us_peck">US peck equals 1/4 bushel (≈0.00880977 m³).</string>
+    <string name="desc_us_dry_gallon">US dry gallon ≈ 0.00440488 m³.</string>
+    <string name="desc_us_dry_quart">US dry quart ≈ 0.00110122 m³.</string>
+    <string name="desc_us_dry_pint">US dry pint ≈ 0.00055061 m³.</string>
+    <string name="desc_uk_barrel">UK barrel ≈ 0.163659 m³.</string>
+    <string name="desc_uk_bushel">UK bushel ≈ 0.0363687 m³.</string>
+    <string name="desc_uk_peck">UK peck equals 1/4 bushel (≈0.00909218 m³).</string>
+    <string name="desc_uk_gallon">UK gallon ≈ 0.00454609 m³.</string>
+    <string name="desc_uk_quart">UK quart ≈ 0.00113652 m³.</string>
+    <string name="desc_uk_pint">UK pint ≈ 0.000568261 m³.</string>
+    <string name="desc_uk_fluid_ounce">UK fluid ounce ≈ 2.8413×10⁻⁵ m³.</string>
+
+    <!-- Area conversion -->
+    <string name="area_other_title">Derived and non-SI</string>
+    <string name="area_us_uk_title">US and Britain</string>
+    <string name="desc_square_meter">Square meter is the SI unit of area.</string>
+    <string name="desc_square_kilometer">Square kilometer equals 10⁶ m².</string>
+    <string name="desc_hectare">Hectare equals 10⁴ m².</string>
+    <string name="desc_are">Are equals 100 m².</string>
+    <string name="desc_square_decimeter">Square decimeter equals 0.01 m².</string>
+    <string name="desc_square_centimeter">Square centimeter equals 0.0001 m².</string>
+    <string name="desc_square_millimeter">Square millimeter equals 10⁻⁶ m².</string>
+    <string name="desc_township">Township equals 36 square miles (≈93,239,680 m²).</string>
+    <string name="desc_square_mile">Square mile ≈ 2,589,988 m².</string>
+    <string name="desc_homestead">Homestead equals 160 acres (≈647,497 m²).</string>
+    <string name="desc_acre">Acre ≈ 4,046.86 m².</string>
+    <string name="desc_rood">Rood equals 1/4 acre (≈1,011.71 m²).</string>
+    <string name="desc_square_rod">Square rod (perch) ≈ 25.2929 m².</string>
+    <string name="desc_square_yard">Square yard ≈ 0.836127 m².</string>
+    <string name="desc_square_foot">Square foot ≈ 0.092903 m².</string>
+    <string name="desc_square_inch">Square inch ≈ 6.4516×10⁻⁴ m².</string>
+
+    <!-- Speed conversion -->
+    <string name="speed_other_title">Derived and non-SI</string>
+    <string name="speed_us_uk_title">US and Britain</string>
+    <string name="speed_maritime_title">International and maritime units</string>
+    <string name="desc_meter_per_second">Meter per second is the SI unit of speed.</string>
+    <string name="desc_kilometer_per_second">Kilometer per second equals 1000 m/s.</string>
+    <string name="desc_kilometer_per_hour">Kilometer per hour ≈ 0.27778 m/s.</string>
+    <string name="desc_meter_per_minute">Meter per minute ≈ 0.016667 m/s.</string>
+    <string name="desc_mile_per_second">Mile per second ≈ 1,609.34 m/s.</string>
+    <string name="desc_mile_per_hour">Mile per hour ≈ 0.44704 m/s.</string>
+    <string name="desc_foot_per_second">Foot per second ≈ 0.3048 m/s.</string>
+    <string name="desc_foot_per_minute">Foot per minute ≈ 0.00508 m/s.</string>
+    <string name="desc_knot">Knot ≈ 0.514444 m/s.</string>
+    <string name="desc_nautical_mile_per_hour">Nautical mile per hour ≈ 0.514444 m/s.</string>
 </resources>
