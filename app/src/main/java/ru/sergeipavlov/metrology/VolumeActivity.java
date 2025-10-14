@@ -1,20 +1,22 @@
 package ru.sergeipavlov.metrology;
 
-import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import androidx.activity.EdgeToEdge;
-
-public class VolumeActivity extends BaseActivity {
+public class VolumeActivity extends SingleFragmentActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_volume);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.volume_container, new VolumeFragment())
-                    .commit();
-        }
+    protected int getLayoutResId() {
+        return R.layout.activity_volume;
+    }
+
+    @Override
+    protected int getFragmentContainerId() {
+        return R.id.volume_container;
+    }
+
+    @NonNull
+    @Override
+    protected Fragment createFragment() {
+        return new VolumeFragment();
     }
 }

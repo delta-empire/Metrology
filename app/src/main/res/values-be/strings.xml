@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">Metrology</string>
 
     <string name="base_units_title">Асноўныя адзінкі СІ</string>
     <string name="derived_units_title">Пахадныя адзінкі СІ</string>
@@ -42,6 +43,7 @@
     <string name="desc_pound">Фунт — адзінка масы ЗША і Брытаніі, роўная 0,45359237 кг.</string>
     <string name="desc_ounce">Унцыя — 1/16 фунта (≈28,35 г).</string>
     <string name="desc_dram">Драм — 1/16 унцыі (≈1,77 г).</string>
+    <string name="desc_grain">Гран — 1/7000 фунта (≈64,8 мг).</string>
     <string name="desc_short_ton">Кароткая тона (ЗША) — 2000 фунтаў (≈907 кг).</string>
     <string name="desc_short_hundredweight">Кароткі цэнтнер (ЗША) — 100 фунтаў (≈45,36 кг).</string>
     <string name="desc_long_ton">Доўгая тона (Брытанія) — 2240 фунтаў (≈1016 кг).</string>
@@ -49,6 +51,8 @@
     <string name="desc_troy_pound">Тройскі фунт — 12 тройскіх унцый (≈0,373 кг).</string>
     <string name="desc_troy_ounce">Тройская унцыя — 31,1034768 г.</string>
     <string name="desc_pennyweight">Пеніўейт — 1/20 тройскай унцыі (≈1,555 г).</string>
+    <string name="desc_mite">Майт — 1/24 грана (≈0,0027 г).</string>
+    <string name="desc_doit">Дойт — 1/24 майта (≈0,00011 г).</string>
     <string name="mass_us_uk_title">ЗША і Брытанія</string>
     <string name="mass_us_title">ЗША</string>
     <string name="mass_uk_title">Брытанія</string>
@@ -67,9 +71,98 @@
     <string name="language_russian">Руская</string>
     <string name="language_belarusian">Беларуская</string>
     <string name="language_english">Англійская</string>
+    <string name="theme_light">Светлая</string>
     <string name="theme_dark">Цёмная</string>
     <string name="theme_system">Сістэмная</string>
     <string name="reset_defaults">Скінуць да стандартных</string>
+
+    <string name="label_physical">Фізічная велічыня</string>
+    <string name="label_signal">Уніфікаваны сігнал</string>
+    <string name="label_start">Пачатак</string>
+    <string name="label_end">Канец</string>
+
+    <!-- Power conversion -->
+    <string name="power_other_title">Пахадныя і пазасістэмныя</string>
+    <string name="power_us_uk_title">ЗША і Брытанія</string>
+    <string name="desc_watt">Ват — адзінка магутнасці СІ.</string>
+    <string name="desc_megawatt">Мегават роўны 1 000 000 ват.</string>
+    <string name="desc_kilowatt">Кілават роўны 1 000 ват.</string>
+    <string name="desc_volt_ampere">Вольт-ампер — адзінка поўнай электрычнай магутнасці; 1 ВА = 1 Вт пры каэфіцыенце магутнасці 1.</string>
+    <string name="desc_gcal_per_second">Гігакалорыя ў секунду — 1 Гкал/с ≈ 4,1868×10⁹ Вт.</string>
+    <string name="desc_kcal_per_second">Кілокалорыя ў секунду — 1 ккал/с ≈ 4 186,8 Вт.</string>
+    <string name="desc_cal_per_second">Калорыя ў секунду — 1 кал/с ≈ 4,1868 Вт.</string>
+    <string name="desc_gcal_per_hour">Гігакалорыя ў гадзіну — 1 Гкал/г ≈ 1,163×10⁶ Вт.</string>
+    <string name="desc_kcal_per_hour">Кілокалорыя ў гадзіну — 1 ккал/г ≈ 1,163 Вт.</string>
+    <string name="desc_cal_per_hour">Калорыя ў гадзіну — 1 кал/г ≈ 0,001163 Вт.</string>
+    <string name="desc_hp_s">Конская сіла (паравая) — 1 hp(S) ≈ 9 810,55 Вт.</string>
+    <string name="desc_hp_e">Конская сіла (электрычная) — 1 hp(E) = 746 Вт.</string>
+    <string name="desc_hp_h">Конская сіла (гідраўлічная) — 1 hp(H) ≈ 745,92 Вт.</string>
+    <string name="desc_hp_i">Конская сіла (міжнародная) — 1 hp(I) ≈ 745,70 Вт.</string>
+    <string name="desc_hp_m">Конская сіла (метрычная) — 1 hp(M) = 735,49875 Вт.</string>
+    <string name="desc_kgf_m_per_second">Кілаграм-сіла метр у секунду — 1 кгс·м/с = 9,80665 Вт.</string>
+    <string name="desc_joule_per_second">Джоуль у секунду — 1 Дж/с роўны 1 Вт.</string>
+    <string name="desc_joule_per_hour">Джоуль у гадзіну — 1 Дж/г ≈ 0,0002778 Вт.</string>
+    <string name="desc_erg_per_second">Эрг у секунду — 1 эрг/с = 10⁻⁷ Вт.</string>
+    <string name="desc_rt">Тона холаду — 1 RT ≈ 3,517 кВт.</string>
+    <string name="desc_usrt">Амерыканская тона холаду — 1 USRT = 12 000 BTU/г ≈ 3,517 кВт.</string>
+    <string name="desc_btu_per_second">BTU у секунду — 1 BTU/с ≈ 1 055,06 Вт.</string>
+    <string name="desc_btu_per_minute">BTU у хвіліну — 1 BTU/хв ≈ 17,58 Вт.</string>
+    <string name="desc_btu_per_hour">BTU у гадзіну — 1 BTU/г ≈ 0,29307 Вт.</string>
+    <string name="desc_ft_lbf_per_second">Фут-фунт-сіла ў секунду — 1 ft·lbf/с ≈ 1,35582 Вт.</string>
+    <string name="energy_other_title">Пахадныя і пазасістэмныя</string>
+    <string name="energy_us_uk_title">ЗША і Брытанія</string>
+    <string name="desc_joule">Джоуль — адзінка энергіі СІ.</string>
+    <string name="desc_megajoule">Мегаджоуль — 1 000 000 джоўляў.</string>
+    <string name="desc_kilojoule">Кіладжоуль — 1 000 джоўляў.</string>
+    <string name="desc_megacalorie">Мегакалорыя — 1 000 000 калорый (≈4,1868×10⁶ Дж).</string>
+    <string name="desc_kilocalorie">Кілокалорыя — 1 000 калорый (≈4 186,8 Дж).</string>
+    <string name="desc_calorie">Калорыя — ≈4,1868 Дж.</string>
+    <string name="desc_kgf_meter">Кілаграм-сіла метр — ≈9,80665 Дж.</string>
+    <string name="desc_kilowatt_hour">Кілават-гадзіна — 3 600 000 Дж.</string>
+    <string name="desc_watt_hour">Ват-гадзіна — 3 600 Дж.</string>
+    <string name="desc_watt_second">Ват-секунда роўная аднаму джоўлю.</string>
+    <string name="desc_erg">Эрг — 10⁻⁷ Дж.</string>
+    <string name="desc_tm_eu">Тэрм (ЕС) — ≈1,05505585257348×10⁸ Дж.</string>
+    <string name="desc_tm_us">Тэрм (ЗША) — 105 480 400 Дж.</string>
+    <string name="desc_tm_uk">Тэрм (Вялікабрытанія) — ≈1,05505585257348×10⁸ Дж.</string>
+    <string name="desc_btu">BTU — ≈1 055,06 Дж.</string>
+    <string name="desc_mmbtu">MMBTU — 1 000 000 BTU.</string>
+    <string name="desc_ft_lbf">Фут-фунт-сіла — ≈1,35582 Дж.</string>
+    <!-- Pressure conversion -->
+    <string name="desc_pascal">Паскаль — адзінка ціску СІ.</string>
+    <string name="desc_kgf_cm2">Кілаграм-сіла на квадратны сантыметр.</string>
+    <string name="desc_kgf_m2">Кілаграм-сіла на квадратны метр.</string>
+    <string name="desc_millibar">Мілібар — роўны 100 Паскалям.</string>
+    <string name="desc_bar">Бар — роўны 100000 Паскаляў.</string>
+    <string name="desc_kilopascal">Кілапаскаль — 1000 Паскаляў.</string>
+    <string name="desc_megapascal">Мегапаскаль — 1000000 Паскаляў.</string>
+    <string name="desc_newton_per_square_meter">Ньютан на квадратны метр роўны Паскалю.</string>
+    <string name="desc_kilonewton_per_square_meter">Кілоньютан на квадратны метр — 1000 Паскаляў.</string>
+    <string name="desc_meganewton_per_square_meter">Меганьютан на квадратны метр — 1000000 Паскаляў.</string>
+    <string name="desc_newton_per_square_centimeter">Ньютан на квадратны сантыметр — 10000 Паскаляў.</string>
+    <string name="desc_newton_per_square_millimeter">Ньютан на квадратны міліметр — 1000000 Паскаляў.</string>
+    <string name="desc_atmosphere">Фізічная атмасфера — 101325 Паскаляў.</string>
+    <string name="desc_technical_atmosphere">Тэхнічная атмасфера — 98066,5 Паскаляў.</string>
+    <string name="desc_mm_h2o">Міліметр воднага слупа.</string>
+    <string name="desc_cm_h2o">Сантыметр воднага слупа.</string>
+    <string name="desc_foot_h2o">Фут воднага слупа.</string>
+    <string name="desc_mm_hg">Міліметр ртутнага слупа.</string>
+    <string name="desc_cm_hg">Сантыметр ртутнага слупа.</string>
+    <string name="desc_foot_hg">Фут ртутнага слупа.</string>
+    <string name="desc_ksi">Кілопаўнд на квадратны цаля.</string>
+    <string name="desc_psi">Фунт на квадратны цаля.</string>
+    <string name="desc_psf">Фунт на квадратны фут.</string>
+    <string name="desc_tsi_us">Кароткая тона на квадратны цаля (ЗША).</string>
+    <string name="desc_tsf_us">Кароткая тона на квадратны фут (ЗША).</string>
+    <string name="desc_tsi_uk">Доўгая тона на квадратны цаля (Брытанія).</string>
+    <string name="desc_tsf_uk">Доўгая тона на квадратны фут (Брытанія).</string>
+    <string name="pressure_other_title">Пахадныя і пазасістэмныя</string>
+    <string name="pressure_atmosphere_title">Атмасфера</string>
+    <string name="pressure_water_title">Водны слуп</string>
+    <string name="pressure_mercury_title">Ртутны слуп</string>
+    <string name="pressure_us_uk_title">ЗША і Брытанія</string>
+    <string name="pressure_us_title">ЗША</string>
+    <string name="pressure_uk_title">Брытанія</string>
 
     <!-- Force conversion -->
     <string name="force_other_title">Пахадныя і пазасістэмныя</string>
