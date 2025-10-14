@@ -81,6 +81,51 @@
     <string name="label_start">Начало</string>
     <string name="label_end">Конец</string>
 
+    <!-- Scale types -->
+    <string name="scale_type_linear">Линейная шкала</string>
+    <string name="scale_type_linear_descending">Линейная, убывающая</string>
+    <string name="scale_type_quadratic">Квадратичная шкала</string>
+    <string name="scale_type_quadratic_descending">Квадратичная, убывающая</string>
+    <string name="scale_type_root">Корнеизвлекающая шкала</string>
+    <string name="scale_type_root_descending">Корнеизвлекающая, убывающая</string>
+
+    <!-- Main menu items -->
+    <string name="main_menu_units">Единицы измерения</string>
+    <string name="main_menu_scale_signal">Шкала-сигнал</string>
+    <string name="main_menu_temperature_sensors">Датчики температуры</string>
+    <string name="main_menu_constriction_devices">Сужающие устройства</string>
+    <string name="main_menu_settings">Настройки</string>
+
+    <!-- Base units -->
+    <string name="base_unit_time">Время</string>
+    <string name="base_unit_length">Длина</string>
+    <string name="base_unit_mass">Масса</string>
+    <string name="base_unit_electric_current">Сила тока</string>
+    <string name="base_unit_temperature">Температура</string>
+    <string name="base_unit_amount_of_substance">Количество вещества</string>
+    <string name="base_unit_luminous_intensity">Сила света</string>
+
+    <!-- Derived units -->
+    <string name="derived_unit_pressure">Давление</string>
+    <string name="derived_unit_power">Мощность</string>
+    <string name="derived_unit_energy">Энергия</string>
+    <string name="derived_unit_frequency">Частота</string>
+    <string name="derived_unit_force">Сила</string>
+    <string name="derived_unit_volume">Объём</string>
+    <string name="derived_unit_area">Площадь</string>
+    <string name="derived_unit_speed">Скорость</string>
+    <string name="derived_unit_acceleration">Ускорение</string>
+    <string name="derived_unit_density">Плотность</string>
+    <string name="derived_unit_angle">Угловая мера</string>
+    <string name="derived_unit_rotation_speed">Скорость вращения</string>
+    <string name="derived_unit_torque">Момент силы</string>
+    <string name="derived_unit_flow_rate_volume">Расход (объёмный)</string>
+    <string name="derived_unit_flow_rate_mass">Расход (массовый)</string>
+    <string name="derived_unit_ionizing_radiation">Ионизирующее излучение</string>
+    <string name="derived_unit_radioactivity">Радиоактивность</string>
+    <string name="derived_unit_decibels">Децибелы</string>
+    <string name="derived_unit_viscosity">Вязкость</string>
+
     <!-- Power conversion -->
     <string name="power_other_title">Производные и внесистемные</string>
     <string name="power_us_uk_title">США и Британия</string>

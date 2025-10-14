@@ -81,6 +81,51 @@
     <string name="label_start">Start</string>
     <string name="label_end">End</string>
 
+    <!-- Scale types -->
+    <string name="scale_type_linear">Linear scale</string>
+    <string name="scale_type_linear_descending">Linear, decreasing</string>
+    <string name="scale_type_quadratic">Quadratic scale</string>
+    <string name="scale_type_quadratic_descending">Quadratic, decreasing</string>
+    <string name="scale_type_root">Root-extracting scale</string>
+    <string name="scale_type_root_descending">Root-extracting, decreasing</string>
+
+    <!-- Main menu items -->
+    <string name="main_menu_units">Units of measurement</string>
+    <string name="main_menu_scale_signal">Scale-signal</string>
+    <string name="main_menu_temperature_sensors">Temperature sensors</string>
+    <string name="main_menu_constriction_devices">Constriction devices</string>
+    <string name="main_menu_settings">Settings</string>
+
+    <!-- Base units -->
+    <string name="base_unit_time">Time</string>
+    <string name="base_unit_length">Length</string>
+    <string name="base_unit_mass">Mass</string>
+    <string name="base_unit_electric_current">Electric current</string>
+    <string name="base_unit_temperature">Temperature</string>
+    <string name="base_unit_amount_of_substance">Amount of substance</string>
+    <string name="base_unit_luminous_intensity">Luminous intensity</string>
+
+    <!-- Derived units -->
+    <string name="derived_unit_pressure">Pressure</string>
+    <string name="derived_unit_power">Power</string>
+    <string name="derived_unit_energy">Energy</string>
+    <string name="derived_unit_frequency">Frequency</string>
+    <string name="derived_unit_force">Force</string>
+    <string name="derived_unit_volume">Volume</string>
+    <string name="derived_unit_area">Area</string>
+    <string name="derived_unit_speed">Speed</string>
+    <string name="derived_unit_acceleration">Acceleration</string>
+    <string name="derived_unit_density">Density</string>
+    <string name="derived_unit_angle">Angular measure</string>
+    <string name="derived_unit_rotation_speed">Rotational speed</string>
+    <string name="derived_unit_torque">Torque</string>
+    <string name="derived_unit_flow_rate_volume">Flow rate (volumetric)</string>
+    <string name="derived_unit_flow_rate_mass">Flow rate (mass)</string>
+    <string name="derived_unit_ionizing_radiation">Ionizing radiation</string>
+    <string name="derived_unit_radioactivity">Radioactivity</string>
+    <string name="derived_unit_decibels">Decibels</string>
+    <string name="derived_unit_viscosity">Viscosity</string>
+
     <!-- Power conversion -->
     <string name="power_other_title">Derived and non-SI</string>
     <string name="power_us_uk_title">US and Britain</string>

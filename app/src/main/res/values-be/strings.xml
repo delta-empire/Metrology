@@ -81,6 +81,51 @@
     <string name="label_start">Пачатак</string>
     <string name="label_end">Канец</string>
 
+    <!-- Scale types -->
+    <string name="scale_type_linear">Лінейная шкала</string>
+    <string name="scale_type_linear_descending">Лінейная, змяншаючаяся</string>
+    <string name="scale_type_quadratic">Квадратычная шкала</string>
+    <string name="scale_type_quadratic_descending">Квадратычная, змяншаючаяся</string>
+    <string name="scale_type_root">Карэнявая шкала</string>
+    <string name="scale_type_root_descending">Карэнявая, змяншаючаяся</string>
+
+    <!-- Main menu items -->
+    <string name="main_menu_units">Адзіницы вымярэння</string>
+    <string name="main_menu_scale_signal">Шкала-сігнал</string>
+    <string name="main_menu_temperature_sensors">Датчыкі тэмпературы</string>
+    <string name="main_menu_constriction_devices">Звужальныя прылады</string>
+    <string name="main_menu_settings">Налады</string>
+
+    <!-- Base units -->
+    <string name="base_unit_time">Час</string>
+    <string name="base_unit_length">Даўжыня</string>
+    <string name="base_unit_mass">Маса</string>
+    <string name="base_unit_electric_current">Сіла току</string>
+    <string name="base_unit_temperature">Тэмпература</string>
+    <string name="base_unit_amount_of_substance">Колькасць рэчыва</string>
+    <string name="base_unit_luminous_intensity">Сіла святла</string>
+
+    <!-- Derived units -->
+    <string name="derived_unit_pressure">Ціск</string>
+    <string name="derived_unit_power">Магутнасць</string>
+    <string name="derived_unit_energy">Энергія</string>
+    <string name="derived_unit_frequency">Частата</string>
+    <string name="derived_unit_force">Сіла</string>
+    <string name="derived_unit_volume">Аб'ём</string>
+    <string name="derived_unit_area">Плошча</string>
+    <string name="derived_unit_speed">Хуткасць</string>
+    <string name="derived_unit_acceleration">Паскарэнне</string>
+    <string name="derived_unit_density">Шчыльнасць</string>
+    <string name="derived_unit_angle">Вуглавая мера</string>
+    <string name="derived_unit_rotation_speed">Хуткасць кручэння</string>
+    <string name="derived_unit_torque">Момант сілы</string>
+    <string name="derived_unit_flow_rate_volume">Расход (аб'ёмны)</string>
+    <string name="derived_unit_flow_rate_mass">Расход (масавы)</string>
+    <string name="derived_unit_ionizing_radiation">Іянізуючае выпраменьванне</string>
+    <string name="derived_unit_radioactivity">Радыеактыўнасць</string>
+    <string name="derived_unit_decibels">Дэцыбелы</string>
+    <string name="derived_unit_viscosity">Вязкасць</string>
+
     <!-- Power conversion -->
     <string name="power_other_title">Пахадныя і пазасістэмныя</string>
     <string name="power_us_uk_title">ЗША і Брытанія</string>

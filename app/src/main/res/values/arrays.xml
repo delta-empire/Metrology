@@ -22,51 +22,51 @@
     </string-array>
 
     <string-array name="scale_types">
-        <item>Линейная шкала</item>
-        <item>Линейная, убывающая</item>
-        <item>Квадратичная шкала</item>
-        <item>Квадратичная, убывающая</item>
-        <item>Корнеизвлекающая шкала</item>
-        <item>Корнеизвлекающая, убывающая</item>
+        <item>@string/scale_type_linear</item>
+        <item>@string/scale_type_linear_descending</item>
+        <item>@string/scale_type_quadratic</item>
+        <item>@string/scale_type_quadratic_descending</item>
+        <item>@string/scale_type_root</item>
+        <item>@string/scale_type_root_descending</item>
     </string-array>
 
     <string-array name="main_menu_items">
-        <item>Единицы измерения</item>
-        <item>Шкала-сигнал</item>
-        <item>Датчики температуры</item>
-        <item>Сужающие устройства</item>
-        <item>Настройки</item>
+        <item>@string/main_menu_units</item>
+        <item>@string/main_menu_scale_signal</item>
+        <item>@string/main_menu_temperature_sensors</item>
+        <item>@string/main_menu_constriction_devices</item>
+        <item>@string/main_menu_settings</item>
     </string-array>
 
     <string-array name="base_units">
-        <item>Время</item>
-        <item>Длина</item>
-        <item>Масса</item>
-        <item>Сила тока</item>
-        <item>Температура</item>
-        <item>Количество вещества</item>
-        <item>Сила света</item>
+        <item>@string/base_unit_time</item>
+        <item>@string/base_unit_length</item>
+        <item>@string/base_unit_mass</item>
+        <item>@string/base_unit_electric_current</item>
+        <item>@string/base_unit_temperature</item>
+        <item>@string/base_unit_amount_of_substance</item>
+        <item>@string/base_unit_luminous_intensity</item>
     </string-array>
 
     <string-array name="derived_units">
-        <item>Давление</item>
-        <item>Мощность</item>
-        <item>Энергия</item>
-        <item>Частота</item>
-        <item>Сила</item>
-        <item>Объём</item>
-        <item>Площадь</item>
-        <item>Скорость</item>
-        <item>Ускорение</item>
-        <item>Плотность</item>
-        <item>Угловая мера</item>
-        <item>Скорость вращения</item>
-        <item>Момент силы</item>
-        <item>Расход (объёмный)</item>
-        <item>Расход (массовый)</item>
-        <item>Ионизирующее излучение</item>
-        <item>Радиоактивность</item>
-        <item>Децибелы</item>
-        <item>Вязкость</item>
+        <item>@string/derived_unit_pressure</item>
+        <item>@string/derived_unit_power</item>
+        <item>@string/derived_unit_energy</item>
+        <item>@string/derived_unit_frequency</item>
+        <item>@string/derived_unit_force</item>
+        <item>@string/derived_unit_volume</item>
+        <item>@string/derived_unit_area</item>
+        <item>@string/derived_unit_speed</item>
+        <item>@string/derived_unit_acceleration</item>
+        <item>@string/derived_unit_density</item>
+        <item>@string/derived_unit_angle</item>
+        <item>@string/derived_unit_rotation_speed</item>
+        <item>@string/derived_unit_torque</item>
+        <item>@string/derived_unit_flow_rate_volume</item>
+        <item>@string/derived_unit_flow_rate_mass</item>
+        <item>@string/derived_unit_ionizing_radiation</item>
+        <item>@string/derived_unit_radioactivity</item>
+        <item>@string/derived_unit_decibels</item>
+        <item>@string/derived_unit_viscosity</item>
     </string-array>
 </resources>
