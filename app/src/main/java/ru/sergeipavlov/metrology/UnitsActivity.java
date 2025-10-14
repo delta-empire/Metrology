@@ -50,7 +50,7 @@ public class UnitsActivity extends BaseActivity {
             items.add(new UnitsAdapter.Item(false, baseUnits[i], activity));
         }
         items.add(new UnitsAdapter.Item(true, getString(R.string.derived_units_title), null));
-        String[] derivedUnits = getResources().getStringArray(R.array.derived_units);
+        String[] derivedUnits = getResources().getStringArray(R.array.derived_unit_entries);
         for (int i = 0; i < derivedUnits.length; i++) {
             Class<?> activity = null;
             if (i == 0) {
