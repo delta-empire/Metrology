@@ -30,7 +30,7 @@
         <item>@string/scale_type_root_descending</item>
     </string-array>
 
-    <string-array name="main_menu_items">
+    <string-array name="main_menu_entries">
         <item>@string/main_menu_units</item>
         <item>@string/main_menu_scale_signal</item>
         <item>@string/main_menu_temperature_sensors</item>
@@ -48,7 +48,7 @@
         <item>@string/base_unit_luminous_intensity</item>
     </string-array>
 
-    <string-array name="derived_units">
+    <string-array name="derived_unit_entries">
         <item>@string/derived_unit_pressure</item>
         <item>@string/derived_unit_power</item>
         <item>@string/derived_unit_energy</item>
