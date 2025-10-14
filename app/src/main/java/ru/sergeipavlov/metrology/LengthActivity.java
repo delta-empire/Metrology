@@ -1,20 +1,22 @@
 package ru.sergeipavlov.metrology;
 
-import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import androidx.activity.EdgeToEdge;
-
-public class LengthActivity extends BaseActivity {
+public class LengthActivity extends SingleFragmentActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_length);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.length_container, new LengthFragment())
-                    .commit();
-        }
+    protected int getLayoutResId() {
+        return R.layout.activity_length;
+    }
+
+    @Override
+    protected int getFragmentContainerId() {
+        return R.id.length_container;
+    }
+
+    @NonNull
+    @Override
+    protected Fragment createFragment() {
+        return new LengthFragment();
     }
 }

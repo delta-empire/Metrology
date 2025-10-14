@@ -1,20 +1,22 @@
 package ru.sergeipavlov.metrology;
 
-import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import androidx.activity.EdgeToEdge;
-
-public class ScaleSignalActivity extends BaseActivity {
+public class ScaleSignalActivity extends SingleFragmentActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_scale_signal);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.scale_signal_container, new ScaleSignalFragment())
-                    .commit();
-        }
+    protected int getLayoutResId() {
+        return R.layout.activity_scale_signal;
+    }
+
+    @Override
+    protected int getFragmentContainerId() {
+        return R.id.scale_signal_container;
+    }
+
+    @NonNull
+    @Override
+    protected Fragment createFragment() {
+        return new ScaleSignalFragment();
     }
 }

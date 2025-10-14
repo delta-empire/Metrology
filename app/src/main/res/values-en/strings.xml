@@ -1,4 +1,6 @@
 <resources>
+    <string name="app_name">Metrology</string>
+
     <string name="base_units_title">Base SI units</string>
     <string name="derived_units_title">Derived SI units</string>
     <string name="desc_kelvin">The kelvin is the SI unit of thermodynamic temperature.</string>
@@ -73,6 +75,40 @@
     <string name="theme_dark">Dark</string>
     <string name="theme_system">System</string>
     <string name="reset_defaults">Reset to default</string>
+
+    <string name="label_physical">Physical quantity</string>
+    <string name="label_signal">Unified signal</string>
+    <string name="label_start">Start</string>
+    <string name="label_end">End</string>
+
+    <!-- Power conversion -->
+    <string name="power_other_title">Derived and non-SI</string>
+    <string name="power_us_uk_title">US and Britain</string>
+    <string name="desc_watt">Watt is the SI unit of power.</string>
+    <string name="desc_megawatt">Megawatt equals 1,000,000 watts.</string>
+    <string name="desc_kilowatt">Kilowatt equals 1,000 watts.</string>
+    <string name="desc_volt_ampere">Volt-ampere is the unit of apparent electric power; 1 VA = 1 W at a power factor of 1.</string>
+    <string name="desc_gcal_per_second">Gigacalorie per second — 1 Gcal/s ≈ 4.1868×10⁹ W.</string>
+    <string name="desc_kcal_per_second">Kilocalorie per second — 1 kcal/s ≈ 4,186.8 W.</string>
+    <string name="desc_cal_per_second">Calorie per second — 1 cal/s ≈ 4.1868 W.</string>
+    <string name="desc_gcal_per_hour">Gigacalorie per hour — 1 Gcal/h ≈ 1.163×10⁶ W.</string>
+    <string name="desc_kcal_per_hour">Kilocalorie per hour — 1 kcal/h ≈ 1.163 W.</string>
+    <string name="desc_cal_per_hour">Calorie per hour — 1 cal/h ≈ 0.001163 W.</string>
+    <string name="desc_hp_s">Horsepower (steam) — 1 hp(S) ≈ 9,810.55 W.</string>
+    <string name="desc_hp_e">Horsepower (electric) — 1 hp(E) = 746 W.</string>
+    <string name="desc_hp_h">Horsepower (hydraulic) — 1 hp(H) ≈ 745.92 W.</string>
+    <string name="desc_hp_i">Horsepower (international) — 1 hp(I) ≈ 745.70 W.</string>
+    <string name="desc_hp_m">Horsepower (metric) — 1 hp(M) = 735.49875 W.</string>
+    <string name="desc_kgf_m_per_second">Kilogram-force meter per second — 1 kgf·m/s = 9.80665 W.</string>
+    <string name="desc_joule_per_second">Joule per second — 1 J/s equals 1 W.</string>
+    <string name="desc_joule_per_hour">Joule per hour — 1 J/h ≈ 0.0002778 W.</string>
+    <string name="desc_erg_per_second">Erg per second — 1 erg/s = 10⁻⁷ W.</string>
+    <string name="desc_rt">Refrigeration ton — 1 RT ≈ 3.517 kW.</string>
+    <string name="desc_usrt">US refrigeration ton — 1 USRT = 12,000 BTU/h ≈ 3.517 kW.</string>
+    <string name="desc_btu_per_second">BTU per second — 1 BTU/s ≈ 1,055.06 W.</string>
+    <string name="desc_btu_per_minute">BTU per minute — 1 BTU/min ≈ 17.58 W.</string>
+    <string name="desc_btu_per_hour">BTU per hour — 1 BTU/h ≈ 0.29307 W.</string>
+    <string name="desc_ft_lbf_per_second">Foot-pound-force per second — 1 ft·lbf/s ≈ 1.35582 W.</string>
     <string name="energy_other_title">Derived and non-SI</string>
     <string name="energy_us_uk_title">US and Britain</string>
     <string name="desc_joule">Joule is the SI unit of energy.</string>
@@ -92,6 +128,41 @@
     <string name="desc_btu">BTU is ≈1,055.06 J.</string>
     <string name="desc_mmbtu">MMBTU equals 1,000,000 BTU.</string>
     <string name="desc_ft_lbf">Foot-pound-force is ≈1.35582 J.</string>
+    <!-- Pressure conversion -->
+    <string name="desc_pascal">Pascal is the SI unit of pressure.</string>
+    <string name="desc_kgf_cm2">Kilogram-force per square centimeter.</string>
+    <string name="desc_kgf_m2">Kilogram-force per square meter.</string>
+    <string name="desc_millibar">Millibar equals 100 pascals.</string>
+    <string name="desc_bar">Bar equals 100,000 pascals.</string>
+    <string name="desc_kilopascal">Kilopascal equals 1,000 pascals.</string>
+    <string name="desc_megapascal">Megapascal equals 1,000,000 pascals.</string>
+    <string name="desc_newton_per_square_meter">Newton per square meter equals a pascal.</string>
+    <string name="desc_kilonewton_per_square_meter">Kilonewton per square meter equals 1,000 pascals.</string>
+    <string name="desc_meganewton_per_square_meter">Meganewton per square meter equals 1,000,000 pascals.</string>
+    <string name="desc_newton_per_square_centimeter">Newton per square centimeter equals 10,000 pascals.</string>
+    <string name="desc_newton_per_square_millimeter">Newton per square millimeter equals 1,000,000 pascals.</string>
+    <string name="desc_atmosphere">Physical atmosphere — 101,325 pascals.</string>
+    <string name="desc_technical_atmosphere">Technical atmosphere — 98,066.5 pascals.</string>
+    <string name="desc_mm_h2o">Millimeter of water column.</string>
+    <string name="desc_cm_h2o">Centimeter of water column.</string>
+    <string name="desc_foot_h2o">Foot of water column.</string>
+    <string name="desc_mm_hg">Millimeter of mercury column.</string>
+    <string name="desc_cm_hg">Centimeter of mercury column.</string>
+    <string name="desc_foot_hg">Foot of mercury column.</string>
+    <string name="desc_ksi">Kilopound per square inch.</string>
+    <string name="desc_psi">Pound per square inch.</string>
+    <string name="desc_psf">Pound per square foot.</string>
+    <string name="desc_tsi_us">Short ton per square inch (US).</string>
+    <string name="desc_tsf_us">Short ton per square foot (US).</string>
+    <string name="desc_tsi_uk">Long ton per square inch (UK).</string>
+    <string name="desc_tsf_uk">Long ton per square foot (UK).</string>
+    <string name="pressure_other_title">Derived and non-SI</string>
+    <string name="pressure_atmosphere_title">Atmosphere</string>
+    <string name="pressure_water_title">Water column</string>
+    <string name="pressure_mercury_title">Mercury column</string>
+    <string name="pressure_us_uk_title">US and Britain</string>
+    <string name="pressure_us_title">US</string>
+    <string name="pressure_uk_title">Britain</string>
 
     <!-- Force conversion -->
     <string name="force_other_title">Derived and non-SI</string>
@@ -108,7 +179,7 @@
     <string name="desc_kilogram_force">Kilogram-force (kgf) is the force produced by 1 kg at g = 9.80665 m/s².</string>
     <string name="desc_gram_force">Gram-force (gf) equals 0.00980665 N.</string>
     <string name="desc_centner_force">Centner-force (Rc) equals 100 kgf (≈980.665 N).</string>
-    <string name="desc_milligram_force">Milligram-force (mGf, мгс) equals 9.80665×10⁻⁶ N.</string>
+    <string name="desc_milligram_force">Milligram-force (mGf) equals 9.80665×10⁻⁶ N.</string>
     <string name="desc_dyne">Dyne equals 10⁻⁵ N.</string>
     <string name="desc_ton_force_us">Ton-force (Tf) equals 2000 pound-force (≈8,896.44 N).</string>
     <string name="desc_pound_force">Pound-force (lbf) ≈ 4.44822 N.</string>

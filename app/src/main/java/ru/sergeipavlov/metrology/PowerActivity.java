@@ -1,20 +1,22 @@
 package ru.sergeipavlov.metrology;
 
-import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import androidx.activity.EdgeToEdge;
-
-public class PowerActivity extends BaseActivity {
+public class PowerActivity extends SingleFragmentActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_power);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.power_container, new PowerFragment())
-                    .commit();
-        }
+    protected int getLayoutResId() {
+        return R.layout.activity_power;
+    }
+
+    @Override
+    protected int getFragmentContainerId() {
+        return R.id.power_container;
+    }
+
+    @NonNull
+    @Override
+    protected Fragment createFragment() {
+        return new PowerFragment();
     }
 }

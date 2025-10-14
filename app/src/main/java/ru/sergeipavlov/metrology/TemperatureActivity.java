@@ -1,21 +1,22 @@
 package ru.sergeipavlov.metrology;
 
-import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import androidx.activity.EdgeToEdge;
-import ru.sergeipavlov.metrology.BaseActivity;
-
-public class TemperatureActivity extends BaseActivity {
+public class TemperatureActivity extends SingleFragmentActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_temperature);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.temperature_container, new TemperatureFragment())
-                    .commit();
-        }
+    protected int getLayoutResId() {
+        return R.layout.activity_temperature;
+    }
+
+    @Override
+    protected int getFragmentContainerId() {
+        return R.id.temperature_container;
+    }
+
+    @NonNull
+    @Override
+    protected Fragment createFragment() {
+        return new TemperatureFragment();
     }
 }
