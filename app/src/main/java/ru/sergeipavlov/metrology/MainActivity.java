@@ -28,7 +28,7 @@ public class MainActivity extends BaseActivity {
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        List<String> items = Arrays.asList(getResources().getStringArray(R.array.main_menu_entries));
+        List<String> items = Arrays.asList(getResources().getStringArray(R.array.main_menu_titles_array));
         recyclerView.setAdapter(new MainAdapter(items));
     }
 }

@@ -1,27 +1,27 @@
 <resources>
-    <string-array name="languages">
+    <string-array name="pref_language_entries_array">
         <item>@string/language_russian</item>
         <item>@string/language_belarusian</item>
         <item>@string/language_english</item>
     </string-array>
-    <string-array name="language_values">
+    <string-array name="pref_language_values_array">
         <item>ru</item>
         <item>be</item>
         <item>en</item>
     </string-array>
 
-    <string-array name="themes">
+    <string-array name="pref_theme_entries_array">
         <item>@string/theme_light</item>
         <item>@string/theme_dark</item>
         <item>@string/theme_system</item>
     </string-array>
-    <string-array name="theme_values">
+    <string-array name="pref_theme_values_array">
         <item>light</item>
         <item>dark</item>
         <item>system</item>
     </string-array>
 
-    <string-array name="scale_types">
+    <string-array name="scale_type_options_array">
         <item>@string/scale_type_linear</item>
         <item>@string/scale_type_linear_descending</item>
         <item>@string/scale_type_quadratic</item>
@@ -30,7 +30,7 @@
         <item>@string/scale_type_root_descending</item>
     </string-array>
 
-    <string-array name="main_menu_entries">
+    <string-array name="main_menu_titles_array">
         <item>@string/main_menu_units</item>
         <item>@string/main_menu_scale_signal</item>
         <item>@string/main_menu_temperature_sensors</item>
@@ -38,7 +38,7 @@
         <item>@string/main_menu_settings</item>
     </string-array>
 
-    <string-array name="base_units">
+    <string-array name="base_unit_names_array">
         <item>@string/base_unit_time</item>
         <item>@string/base_unit_length</item>
         <item>@string/base_unit_mass</item>
@@ -48,7 +48,7 @@
         <item>@string/base_unit_luminous_intensity</item>
     </string-array>
 
-    <string-array name="derived_unit_entries">
+    <string-array name="derived_unit_names_array">
         <item>@string/derived_unit_pressure</item>
         <item>@string/derived_unit_power</item>
         <item>@string/derived_unit_energy</item>

@@ -31,7 +31,7 @@ public class UnitsActivity extends BaseActivity {
 
         List<UnitsAdapter.Item> items = new ArrayList<>();
         items.add(new UnitsAdapter.Item(true, getString(R.string.base_units_title), null));
-        String[] baseUnits = getResources().getStringArray(R.array.base_units);
+        String[] baseUnits = getResources().getStringArray(R.array.base_unit_names_array);
         for (int i = 0; i < baseUnits.length; i++) {
             Class<?> activity = null;
             if (i == 0) {
@@ -50,7 +50,7 @@ public class UnitsActivity extends BaseActivity {
             items.add(new UnitsAdapter.Item(false, baseUnits[i], activity));
         }
         items.add(new UnitsAdapter.Item(true, getString(R.string.derived_units_title), null));
-        String[] derivedUnits = getResources().getStringArray(R.array.derived_unit_entries);
+        String[] derivedUnits = getResources().getStringArray(R.array.derived_unit_names_array);
         for (int i = 0; i < derivedUnits.length; i++) {
             Class<?> activity = null;
             if (i == 0) {
